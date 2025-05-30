@@ -10,7 +10,7 @@ const projects = [
     title: 'KOMMA',
     subtitle: 'Social Platform Design',
     description: 'UX research and design for a social networking platform focused on community building and user engagement.',
-    image: '/images/KOMMACoverMockup.png', // Add your project images
+    image: '/images/komma-cover.jpg', // Add your project images
     tags: ['UX Research', 'UI Design', 'Figma', 'User Testing'],
     color: '#667eea' // Custom accent color for each project
   },
