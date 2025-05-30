@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 
 export default function About() {
@@ -77,7 +78,8 @@ export default function About() {
                     borderRadius: '50px',
                     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                     boxShadow: '0 8px 30px rgba(45, 55, 72, 0.2)',
-                    display: 'inline-block'
+                    display: 'inline-block',
+                    cursor: 'pointer'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-3px)';
@@ -102,7 +104,8 @@ export default function About() {
                     border: '2px solid var(--primary-dark)',
                     borderRadius: '50px',
                     transition: 'all 0.3s ease',
-                    display: 'inline-block'
+                    display: 'inline-block',
+                    cursor: 'pointer'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = 'var(--primary-dark)';
@@ -118,6 +121,29 @@ export default function About() {
                   Download Resume
                 </a>
               </div>
+
+              {/* Stats or highlights */}
+              <div style={{
+                display: 'flex',
+                gap: '3rem',
+                marginTop: '4rem',
+                paddingTop: '2rem',
+                borderTop: '1px solid rgba(45, 55, 72, 0.1)',
+                justifyContent: 'flex-start'
+              }}>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>4+</div>
+                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Projects Completed</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>5+</div>
+                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Years Experience</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>∞</div>
+                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Ideas & Passion</div>
+                </div>
+              </div>
             </div>
 
             {/* Right - Profile Image */}
@@ -129,18 +155,28 @@ export default function About() {
               <div style={{
                 width: '400px',
                 height: '500px',
-                background: 'linear-gradient(135deg, rgba(45, 55, 72, 0.1), rgba(45, 55, 72, 0.05))',
-                borderRadius: '30px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '2rem',
-                color: 'var(--primary-dark)',
                 position: 'relative',
-                overflow: 'hidden'
+                borderRadius: '30px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 60px rgba(0, 0, 0, 0.15)',
+                background: 'linear-gradient(135deg, rgba(45, 55, 72, 0.1), rgba(45, 55, 72, 0.05))'
               }}>
-                {/* Replace with your photo */}
-                Your Photo Here
+                {/* Your Actual Photo */}
+                <img
+                  src="/images/MeJapan.jpeg"
+                  alt="Ruitao Chen - UX/UI Designer"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    transform: 'translateZ(0)',
+                    backfaceVisibility: 'hidden'
+                  }}
+                />
                 
                 {/* Decorative elements */}
                 <div style={{
@@ -151,7 +187,8 @@ export default function About() {
                   height: '100px',
                   background: 'linear-gradient(135deg, var(--primary-dark), var(--primary-darker))',
                   borderRadius: '50%',
-                  opacity: 0.1
+                  opacity: 0.1,
+                  zIndex: 1
                 }} />
                 <div style={{
                   position: 'absolute',
@@ -161,7 +198,8 @@ export default function About() {
                   height: '150px',
                   background: 'linear-gradient(45deg, var(--primary-dark), var(--primary-darker))',
                   borderRadius: '50%',
-                  opacity: 0.05
+                  opacity: 0.05,
+                  zIndex: 1
                 }} />
               </div>
             </div>
@@ -417,7 +455,8 @@ export default function About() {
                 borderRadius: '50px',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 boxShadow: '0 8px 30px rgba(45, 55, 72, 0.2)',
-                display: 'inline-block'
+                display: 'inline-block',
+                cursor: 'pointer'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-3px)';

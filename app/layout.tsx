@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kumbh_Sans, Ubuntu } from "next/font/google";
 import "./globals.css";
+import Footer from "../components/Footer";
 
 const kumbhSans = Kumbh_Sans({
   subsets: ["latin"],
@@ -16,8 +17,8 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My personal portfolio",
+  title: "Ruitao Chen - UX/UI Designer & Developer",
+  description: "Portfolio of Ruitao Chen - A passionate UX/UI designer and developer creating meaningful digital experiences through user-centered design.",
 };
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${kumbhSans.variable} ${ubuntu.variable}`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

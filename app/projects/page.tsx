@@ -1,60 +1,72 @@
 'use client';
 
 import Link from 'next/link';
+import { useState } from 'react';
 import Navbar from '../../components/Navbar';
 
 const projects = [
   {
     id: 'komma',
     title: 'KOMMA',
-    subtitle: 'Social Platform Design',
-    description: 'Comprehensive UX research and design for a social networking platform focused on community building and user engagement. Led user research, created personas, and designed an intuitive interface that increased user retention by 40%.',
-    image: '/images/komma-preview.jpg',
-    tags: ['UX Research', 'UI Design', 'Figma', 'User Testing', 'Prototyping'],
-    duration: '4 months',
-    role: 'Lead UX Designer',
-    year: '2024',
+    subtitle: 'Social Sports Platform',
+    description: 'Full stack design and development of a fantasy sports app for fans of Mixed-Martial Arts',
+    image: '/images/KOMMACoverMockup.png',
+    tags: ['Full Stack Development', 'UX Research', 'UI Design', 'Figma'],
+    duration: '2 years',
+    role: 'Founder',
+    year: '2023-Present',
     color: '#667eea'
   },
   {
+    id: 'prommuni',
+    title: 'Prommuni',
+    subtitle: 'SaaS Web and Mobile Platform',
+    description: 'A service for young professionals to find roommates and leases with similar minded people',
+    image: '/images/PrommuniCoverMockup.png', // Updated to match your naming pattern
+    tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
+    duration: '8 months',
+    role: 'Product Designer',
+    year: '2024 - Present',
+    color: '#43e97b'
+  },
+  {
     id: 'att',
-    title: 'AT&T',
+    title: 'ATT',
     subtitle: 'Mobile App Redesign',
-    description: 'Complete mobile app redesign focused on improving user experience and reducing customer service calls. Streamlined user flows and implemented modern design patterns that reduced support tickets by 25%.',
-    image: '/images/att-preview.jpg',
-    tags: ['Mobile Design', 'Prototyping', 'User Testing', 'iOS/Android', 'Design System'],
+    description: 'Mobile app redesign focused on adding features to a gym app to improve member retention and engagement',
+    image: '/images/ATTCoverMockup.png', // Updated to match your naming pattern
+    tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
     duration: '6 months',
-    role: 'Senior UX/UI Designer',
-    year: '2023',
+    role: 'UI/UX Designer',
+    year: '2024',
     color: '#f093fb'
   },
   {
     id: 'sellmax',
     title: 'SellMax',
-    subtitle: 'E-commerce Platform',
-    description: 'E-commerce platform optimization with focus on conversion rate improvement and user journey mapping. Redesigned the checkout flow and product discovery experience, resulting in 35% increase in conversions.',
-    image: '/images/sellmax-preview.jpg',
-    tags: ['E-commerce', 'Web Design', 'Conversion', 'Analytics', 'A/B Testing'],
+    subtitle: 'Web App Updates',
+    description: 'Updating a car quoting questionnaire to reduce user abandonment rate',
+    image: '/images/SellMaxCoverMockup.png',
+    tags: ['Web Design', 'Conversion', 'Analytics', 'Figma'],
     duration: '5 months',
-    role: 'UX Designer',
+    role: 'Freelance Design Consultant',
     year: '2023',
     color: '#4facfe'
-  },
-  {
-    id: 'prommuni',
-    title: 'Prommuni',
-    subtitle: 'Community Platform',
-    description: 'Community-driven platform design with advanced social features and content management system. Created an engaging user experience that fosters community interaction and content creation.',
-    image: '/images/prommuni-preview.jpg',
-    tags: ['Community Design', 'Social Features', 'Mobile First', 'CMS', 'User Research'],
-    duration: '8 months',
-    role: 'Lead Product Designer',
-    year: '2024',
-    color: '#43e97b'
   }
 ];
 
 export default function Projects() {
+  const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
+
+  const handleImageError = (projectId: string) => {
+    console.log(`Image failed to load: ${projectId}`);
+    setImageErrors(prev => new Set(prev).add(projectId));
+  };
+
+  const handleImageLoad = (projectId: string) => {
+    console.log(`Image loaded successfully: ${projectId}`);
+  };
+
   return (
     <>
       <Navbar />
@@ -103,7 +115,8 @@ export default function Projects() {
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', 
           gap: '3rem',
-          marginTop: '4rem'
+          marginTop: '4rem',
+          alignItems: 'stretch' // Makes all cards same height
         }}>
           {projects.map((project, index) => (
             <Link 
@@ -120,7 +133,9 @@ export default function Projects() {
                   cursor: 'pointer',
                   border: '1px solid rgba(255, 255, 255, 0.2)',
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  height: 'fit-content'
+                  height: '100%', // Makes cards fill available height
+                  display: 'flex', // Flexbox for content layout
+                  flexDirection: 'column' // Stack content vertically
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-8px)';
@@ -138,20 +153,42 @@ export default function Projects() {
                   background: `linear-gradient(135deg, ${project.color}30, ${project.color}15)`,
                   overflow: 'hidden'
                 }}>
-                  {/* Image placeholder */}
-                  <div style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background: `linear-gradient(135deg, ${project.color}40, ${project.color}20)`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '2.5rem',
-                    color: project.color,
-                    fontWeight: '700'
-                  }}>
-                    {project.title}
-                  </div>
+                  {/* Real Image */}
+                  {!imageErrors.has(project.id) && (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} - ${project.subtitle}`}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        transform: 'translateZ(0)',
+                        backfaceVisibility: 'hidden'
+                      }}
+                      onLoad={() => handleImageLoad(project.id)}
+                      onError={() => handleImageError(project.id)}
+                    />
+                  )}
+
+                  {/* Fallback design - shows when image doesn't load */}
+                  {imageErrors.has(project.id) && (
+                    <div style={{
+                      position: 'absolute',
+                      inset: 0,
+                      background: `linear-gradient(135deg, ${project.color}40, ${project.color}20)`,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '2.5rem',
+                      color: project.color,
+                      fontWeight: '700'
+                    }}>
+                      {project.title}
+                    </div>
+                  )}
 
                   {/* Project Year Badge */}
                   <div style={{
@@ -196,113 +233,125 @@ export default function Projects() {
                 </div>
 
                 {/* Project Content */}
-                <div style={{ padding: '2.5rem' }}>
-                  {/* Title & Subtitle */}
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h2 style={{
-                      fontSize: '2rem',
-                      fontWeight: '700',
-                      margin: '0 0 0.5rem 0',
-                      color: 'var(--primary-dark)'
+                <div style={{ 
+                  padding: '2.5rem',
+                  flex: 1, // Takes up remaining space
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between' // Distributes content evenly
+                }}>
+                  {/* Top Content */}
+                  <div>
+                    {/* Title & Subtitle */}
+                    <div style={{ marginBottom: '1.5rem' }}>
+                      <h2 style={{
+                        fontSize: '2rem',
+                        fontWeight: '700',
+                        margin: '0 0 0.5rem 0',
+                        color: 'var(--primary-dark)'
+                      }}>
+                        {project.title}
+                      </h2>
+                      <p style={{
+                        fontSize: '1.2rem',
+                        color: project.color,
+                        margin: 0,
+                        fontWeight: '600'
+                      }}>
+                        {project.subtitle}
+                      </p>
+                    </div>
+
+                    {/* Project Meta Info */}
+                    <div style={{
+                      display: 'flex',
+                      gap: '2rem',
+                      marginBottom: '1.5rem',
+                      padding: '1rem',
+                      background: 'rgba(45, 55, 72, 0.03)',
+                      borderRadius: '12px'
                     }}>
-                      {project.title}
-                    </h2>
+                      <div>
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
+                          ROLE
+                        </div>
+                        <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
+                          {project.role}
+                        </div>
+                      </div>
+                      <div>
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
+                          DURATION
+                        </div>
+                        <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
+                          {project.duration}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Description */}
                     <p style={{
-                      fontSize: '1.2rem',
-                      color: project.color,
-                      margin: 0,
-                      fontWeight: '600'
+                      fontSize: '1.1rem',
+                      lineHeight: '1.7',
+                      color: 'var(--text-secondary)',
+                      margin: '0 0 2rem 0'
                     }}>
-                      {project.subtitle}
+                      {project.description}
                     </p>
                   </div>
 
-                  {/* Project Meta Info */}
-                  <div style={{
-                    display: 'flex',
-                    gap: '2rem',
-                    marginBottom: '1.5rem',
-                    padding: '1rem',
-                    background: 'rgba(45, 55, 72, 0.03)',
-                    borderRadius: '12px'
-                  }}>
-                    <div>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                        ROLE
-                      </div>
-                      <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
-                        {project.role}
-                      </div>
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                        DURATION
-                      </div>
-                      <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
-                        {project.duration}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Description */}
-                  <p style={{
-                    fontSize: '1.1rem',
-                    lineHeight: '1.7',
-                    color: 'var(--text-secondary)',
-                    margin: '0 0 2rem 0'
-                  }}>
-                    {project.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: '0.75rem',
-                    marginBottom: '2rem'
-                  }}>
-                    {project.tags.map((tag, tagIndex) => (
-                      <span 
-                        key={tagIndex}
-                        style={{
-                          padding: '0.5rem 1.25rem',
-                          background: `${project.color}15`,
-                          color: project.color,
-                          borderRadius: '25px',
-                          fontSize: '0.9rem',
-                          fontWeight: '500',
-                          border: `1px solid ${project.color}30`
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Read More Link */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.75rem',
-                    color: project.color,
-                    fontWeight: '600',
-                    fontSize: '1.1rem',
-                    transition: 'transform 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateX(8px)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateX(0)';
-                  }}
-                  >
-                    Read Full Case Study
-                    <span style={{
-                      fontSize: '1.4rem',
-                      transition: 'transform 0.3s ease'
+                  {/* Bottom Content */}
+                  <div>
+                    {/* Tags */}
+                    <div style={{
+                      display: 'flex',
+                      flexWrap: 'wrap',
+                      gap: '0.75rem',
+                      marginBottom: '2rem'
                     }}>
-                      →
-                    </span>
+                      {project.tags.map((tag, tagIndex) => (
+                        <span 
+                          key={tagIndex}
+                          style={{
+                            padding: '0.5rem 1.25rem',
+                            background: `${project.color}15`,
+                            color: project.color,
+                            borderRadius: '25px',
+                            fontSize: '0.9rem',
+                            fontWeight: '500',
+                            border: `1px solid ${project.color}30`
+                          }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Read More Link */}
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      color: project.color,
+                      fontWeight: '600',
+                      fontSize: '1.1rem',
+                      transition: 'transform 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateX(8px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateX(0)';
+                    }}
+                    >
+                      Read Full Case Study
+                      <span style={{
+                        fontSize: '1.4rem',
+                        transition: 'transform 0.3s ease'
+                      }}>
+                        →
+                      </span>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -350,7 +399,8 @@ export default function Projects() {
               fontSize: '1.1rem',
               borderRadius: '50px',
               transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-              boxShadow: '0 8px 30px rgba(45, 55, 72, 0.2)'
+              boxShadow: '0 8px 30px rgba(45, 55, 72, 0.2)',
+              cursor: 'pointer'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-3px)';
