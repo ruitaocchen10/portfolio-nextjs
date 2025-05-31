@@ -95,7 +95,7 @@ export default function ATTProject() {
                   ROLE
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  Contract UI/UX Designer
+                  UI/UX Designer
                 </p>
               </div>
               <div>
@@ -103,7 +103,7 @@ export default function ATTProject() {
                   DURATION
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  6 months
+                  5 months
                 </p>
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function ATTProject() {
                 alt="ATT Project Cover"
                 fill
                 style={{
-                  objectFit: 'cover',
+                  objectFit: 'contain',
                   borderRadius: '30px'
                 }}
                 priority
@@ -210,7 +210,7 @@ export default function ATTProject() {
                   </p>
                   <h2 style={{
                     fontSize: '2.5rem',
-                    fontWeight: '700',
+                    fontWeight: '600',
                     lineHeight: '1.2',
                     color: 'var(--primary-dark)',
                     marginBottom: '1.5rem'
@@ -260,7 +260,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1.5rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -270,7 +270,8 @@ export default function ATTProject() {
                   listStyle: 'none',
                   padding: 0,
                   margin: 0,
-                  fontSize: '1.2rem',
+                  fontSize: '1.5rem',
+                  fontWeight: '400',
                   lineHeight: '1.8',
                   color: 'var(--text-secondary)'
                 }}>
@@ -315,7 +316,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -341,11 +342,11 @@ export default function ATTProject() {
                     padding: '1.5rem',
                     borderRadius: '16px',
                     borderLeft: '4px solid #f093fb',
-                    textAlign: 'center'
+                    textAlign: 'left'
                   }}>
                     <p style={{
                       fontSize: '1.1rem',
-                      fontWeight: '600',
+                      fontWeight: '400',
                       color: 'var(--primary-dark)',
                       margin: 0,
                       lineHeight: '1.4'
@@ -372,7 +373,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -428,7 +429,8 @@ export default function ATTProject() {
                   </div>
                 </div>
                 <p style={{
-                  fontSize: '1.1rem',
+                  fontSize: '1.2rem',
+                  fontWeight: '400',
                   lineHeight: '1.7',
                   color: 'var(--text-secondary)',
                   textAlign: 'center',
@@ -467,7 +469,8 @@ export default function ATTProject() {
                   </div>
                 </div>
                 <p style={{
-                  fontSize: '1.1rem',
+                  fontSize: '1.2rem',
+                  fontWeight: '400',
                   lineHeight: '1.7',
                   color: 'var(--text-secondary)',
                   textAlign: 'center',
@@ -522,7 +525,7 @@ export default function ATTProject() {
                     listStyle: 'none',
                     padding: 0,
                     margin: 0,
-                    fontSize: '1.1rem',
+                    fontSize: '1.5rem',
                     lineHeight: '1.7',
                     color: 'var(--text-secondary)'
                   }}>
@@ -568,7 +571,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -837,7 +840,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -860,8 +863,7 @@ export default function ATTProject() {
                   alt="ATT Final Prototype"
                   fill
                   style={{
-                    objectFit: 'contain',
-                    padding: '3rem'
+                    objectFit: 'contain'
                   }}
                 />
               </div>
@@ -882,7 +884,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -975,7 +977,7 @@ export default function ATTProject() {
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
-                  fontWeight: '700',
+                  fontWeight: '600',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
@@ -1005,7 +1007,7 @@ export default function ATTProject() {
                       alignItems: 'flex-start',
                       gap: '1rem',
                       marginBottom: '1rem',
-                      fontSize: '1.1rem',
+                      fontSize: '1.4rem',
                       lineHeight: '1.6',
                       color: 'var(--text-secondary)'
                     }}>

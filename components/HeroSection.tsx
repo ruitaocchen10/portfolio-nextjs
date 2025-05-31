@@ -216,11 +216,9 @@ export default function HeroSection() {
             position: 'relative',
             overflow: 'hidden'
           }}>
-            {/* Replace this section with your hero image */}
-            {/* Temporarily commented out until you add the image */}
             
             <Image
-              src="/images/MeCover.jpg" // Add your hero image to public/images/
+              src="/images/MeCover.JPG" // Add your hero image to public/images/
               alt="Ruitao Cover Photo"
               fill
               style={{

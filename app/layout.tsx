@@ -17,8 +17,8 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "Ruitao Chen - UX/UI Designer & Developer",
-  description: "Portfolio of Ruitao Chen - A passionate UX/UI designer and developer creating meaningful digital experiences through user-centered design.",
+  title: "Ruitao Chen - Product Designer & Developer",
+  description: "Portfolio of Ruitao Chen - A Full-Stack designer and developer creating useful digital experiences.",
 };
 
 export default function RootLayout({

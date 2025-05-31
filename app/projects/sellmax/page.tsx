@@ -103,7 +103,7 @@ export default function SellMaxProject() {
                   DURATION
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  5 months
+                  2 months
                 </p>
               </div>
               <div>
