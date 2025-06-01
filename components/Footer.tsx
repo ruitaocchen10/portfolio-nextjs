@@ -89,7 +89,7 @@ export default function Footer() {
               </a>
               
               <a 
-                href="/resume.pdf" // Add your resume link
+                href="/resume/Ruitao Chen - Product Designer Resume.pdf" // Add your resume link
                 style={{
                   display: 'flex',
                   alignItems: 'center',

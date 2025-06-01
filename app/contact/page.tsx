@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Navbar from '../../components/Navbar';
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,19 +13,37 @@ export default function Contact() {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Replace these with your actual EmailJS credentials
+  const EMAILJS_SERVICE_ID = 'service_wii2zyt';
+  const EMAILJS_TEMPLATE_ID = 'template_sndbovj';
+  const EMAILJS_PUBLIC_KEY = 'oag3XExwD0YIcR1g7';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Add your form submission logic here
-    console.log('Form submitted:', formData);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    setSubmitStatus('idle');
+
+    try {
+      if (form.current) {
+        const result = await emailjs.sendForm(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          form.current,
+          EMAILJS_PUBLIC_KEY
+        );
+        
+        console.log('Email sent successfully:', result.text);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', company: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-      alert('Thank you for your message! I\'ll get back to you soon.');
-      setFormData({ name: '', email: '', company: '', message: '' });
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -73,7 +93,6 @@ export default function Contact() {
           }}>
             Get In Touch
           </h1>
-
         </section>
 
         {/* Main Contact Section */}
@@ -111,7 +130,36 @@ export default function Contact() {
                 I'll get back to you within 24 hours.
               </p>
 
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {/* Success/Error Messages */}
+              {submitStatus === 'success' && (
+                <div style={{
+                  padding: '1rem',
+                  marginBottom: '1.5rem',
+                  background: 'rgba(67, 233, 123, 0.1)',
+                  border: '1px solid rgba(67, 233, 123, 0.3)',
+                  borderRadius: '12px',
+                  color: '#16a34a',
+                  fontSize: '0.95rem'
+                }}>
+                  ✅ Message sent successfully! I'll get back to you soon.
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div style={{
+                  padding: '1rem',
+                  marginBottom: '1.5rem',
+                  background: 'rgba(239, 68, 68, 0.1)',
+                  border: '1px solid rgba(239, 68, 68, 0.3)',
+                  borderRadius: '12px',
+                  color: '#dc2626',
+                  fontSize: '0.95rem'
+                }}>
+                  ❌ Something went wrong. Please try again or email me directly.
+                </div>
+              )}
+
+              <form ref={form} onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                   <div>
                     <label style={{
@@ -245,7 +293,9 @@ export default function Contact() {
                   style={{
                     background: isSubmitting 
                       ? '#ccc' 
-                      : 'linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%)',
+                      : submitStatus === 'success'
+                        ? 'linear-gradient(135deg, #67E97B 0%, #38F9D7 100%)'
+                        : 'linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%)',
                     color: 'white',
                     border: 'none',
                     fontWeight: '600',
@@ -270,7 +320,7 @@ export default function Contact() {
                     }
                   }}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : submitStatus === 'success' ? 'Message Sent ✓' : 'Send Message'}
                 </button>
               </form>
             </div>

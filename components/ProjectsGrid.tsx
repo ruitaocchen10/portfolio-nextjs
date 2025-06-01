@@ -31,15 +31,6 @@ const projects = [
     image: '/images/ATTCoverMockup.png',
     tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
     color: '#f093fb'
-  },
-  {
-    id: 'sellmax',
-    title: 'SellMax',
-    subtitle: 'Web App Updates',
-    description: 'Updating a car quoting questionnaire to reduce user abandonment rate.',
-    image: '/images/SellMaxCoverMockup.png',
-    tags: ['Web Design', 'Conversion', 'Analytics', 'Figma'],
-    color: '#4facfe'
   }
 ];
 

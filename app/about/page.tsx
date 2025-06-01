@@ -94,7 +94,7 @@ export default function About() {
                 </Link>
 
                 <a 
-                  href="/resume.pdf" // Add your resume
+                  href="/resume/Ruitao Chen - Product Designer Resume.pdf" // Add your resume
                   style={{
                     color: 'var(--primary-dark)',
                     textDecoration: 'none',
