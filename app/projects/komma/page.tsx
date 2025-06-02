@@ -95,7 +95,7 @@ export default function KommaProject() {
                   ROLE
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  Solo Started Project
+                  Founder
                 </p>
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function KommaProject() {
                 alt="KOMMA Project Cover"
                 fill
                 style={{
-                  objectFit: 'contain',
+                  objectFit: 'cover',
                   borderRadius: '30px'
                 }}
                 priority
@@ -192,56 +192,42 @@ export default function KommaProject() {
             {/* Problem Statement */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '4rem',
-                alignItems: 'center',
+                background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.02))',
+                padding: '3rem',
+                borderRadius: '24px',
                 marginBottom: '3rem'
               }}>
-                <div>
-                  <p style={{
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    color: '#667eea',
-                    marginBottom: '1rem',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.1em'
-                  }}>
-                    MIXED-MARTIAL ARTS FANS NEED A BETTER COMMUNITY
-                  </p>
-                  <h2 style={{
-                    fontSize: '2.5rem',
-                    fontWeight: '600',
-                    lineHeight: '1.2',
-                    color: 'var(--primary-dark)',
-                    margin: 0
-                  }}>
-                    UFC fans want to play fantasy sports to showcase their knowledge of fighters while competing with their friends. It adds excitement, personal stakes, and monetary value in some cases.
-                  </h2>
-                </div>
-                <div style={{
-                  height: '300px',
-                  background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05))',
-                  borderRadius: '20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  position: 'relative'
+                <p style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  color: '#667eea',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
-                  <Image
-                    src="/images/KOMMATestimonials.png"
-                    alt="KOMMA User Testimonials"
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      padding: '2rem'
-                    }}
-                  />
-                </div>
+                  MIXED-MARTIAL ARTS FANS NEED A BETTER COMMUNITY
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '700',
+                  lineHeight: '1.2',
+                  color: 'var(--primary-dark)',
+                  marginBottom: '1.5rem'
+                }}>
+                  UFC fans want to play fantasy sports to showcase their knowledge of fighters while competing with their friends
+                </h2>
+                <p style={{
+                  fontSize: '1.2rem',
+                  lineHeight: '1.6',
+                  color: 'var(--text-secondary)',
+                  margin: 0
+                }}>
+                  It adds excitement, personal stakes, and monetary value in some cases. However, existing platforms either treat MMA as an afterthought or lack the sophisticated features fans deserve.
+                </p>
               </div>
             </section>
 
-            {/* User Personas */}
+            {/* Market Research */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <p style={{
@@ -252,7 +238,7 @@ export default function KommaProject() {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  GAMEPLAY
+                  MARKET RESEARCH
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
@@ -260,274 +246,20 @@ export default function KommaProject() {
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
-                  Understanding the fans
+                  A massive untapped opportunity
                 </h2>
-              </div>
-
-              {/* Persona Cards */}
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '3rem'
-              }}>
-                {/* Hardcore Fan */}
-                <div style={{
-                  background: 'white',
-                  borderRadius: '24px',
-                  padding: '2.5rem',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(102, 126, 234, 0.1)'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1.5rem',
-                    marginBottom: '2rem'
-                  }}>
-                    <div style={{
-                      width: '80px',
-                      height: '80px',
-                      borderRadius: '50%',
-                      background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '2rem',
-                      position: 'relative',
-                      overflow: 'hidden'
-                    }}>
-                      <Image
-                        src="/images/Stickland.jpeg"
-                        alt="The Hardcore Fan"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                      />
-                    </div>
-                    <div>
-                      <h3 style={{
-                        fontSize: '1.5rem',
-                        fontWeight: '700',
-                        marginBottom: '0.5rem',
-                        color: 'var(--primary-dark)'
-                      }}>
-                        The Hardcore Fan
-                      </h3>
-                      <div style={{
-                        display: 'flex',
-                        gap: '1rem',
-                        fontSize: '0.9rem',
-                        color: 'var(--text-secondary)'
-                      }}>
-                        <span>30 y.o</span>
-                        <span>Single</span>
-                        <span>Male</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div style={{ marginBottom: '2rem' }}>
-                    <div style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      marginBottom: '0.5rem'
-                    }}>
-                      <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>
-                        MMA Knowledge
-                      </span>
-                      <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#667eea' }}>
-                        High
-                      </span>
-                    </div>
-                    <div style={{
-                      height: '8px',
-                      background: '#f0f0f0',
-                      borderRadius: '4px',
-                      overflow: 'hidden'
-                    }}>
-                      <div style={{
-                        width: '90%',
-                        height: '100%',
-                        background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                        borderRadius: '4px'
-                      }} />
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '1rem',
-                      color: 'var(--primary-dark)'
-                    }}>
-                      Pain Points
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                      {[
-                        'Limited event pool',
-                        'Infrequent Updates',
-                        'Current Boring Gameplay',
-                        'Limited Competition Formats'
-                      ].map((point, index) => (
-                        <li key={index} style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.75rem',
-                          marginBottom: '0.75rem',
-                          fontSize: '1rem',
-                          color: 'var(--text-secondary)'
-                        }}>
-                          <span style={{ color: '#667eea', fontSize: '1.2rem' }}>⚡</span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Casual Fan */}
-                <div style={{
-                  background: 'white',
-                  borderRadius: '24px',
-                  padding: '2.5rem',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(102, 126, 234, 0.1)'
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1.5rem',
-                    marginBottom: '2rem'
-                  }}>
-                    <div style={{
-                      width: '80px',
-                      height: '80px',
-                      borderRadius: '50%',
-                      background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '2rem',
-                      position: 'relative',
-                      overflow: 'hidden'
-                    }}>
-                      <Image
-                        src="/images/Guyatbar.jpeg"
-                        alt="The Casual Fan"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                      />
-                    </div>
-                    <div>
-                      <h3 style={{
-                        fontSize: '1.5rem',
-                        fontWeight: '700',
-                        marginBottom: '0.5rem',
-                        color: 'var(--primary-dark)'
-                      }}>
-                        The Casual Fan
-                      </h3>
-                      <div style={{
-                        display: 'flex',
-                        gap: '1rem',
-                        fontSize: '0.9rem',
-                        color: 'var(--text-secondary)'
-                      }}>
-                        <span>27 y.o</span>
-                        <span>Single</span>
-                        <span>Male</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div style={{ marginBottom: '2rem' }}>
-                    <div style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      marginBottom: '0.5rem'
-                    }}>
-                      <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>
-                        MMA Knowledge
-                      </span>
-                      <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#667eea' }}>
-                        Low to Medium
-                      </span>
-                    </div>
-                    <div style={{
-                      height: '8px',
-                      background: '#f0f0f0',
-                      borderRadius: '4px',
-                      overflow: 'hidden'
-                    }}>
-                      <div style={{
-                        width: '45%',
-                        height: '100%',
-                        background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                        borderRadius: '4px'
-                      }} />
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '1rem',
-                      color: 'var(--primary-dark)'
-                    }}>
-                      Pain Points
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                      {[
-                        'Time Commitment',
-                        'Access to Information',
-                        'Confusing scoring formats',
-                        'Limited Knowledge/Motivation'
-                      ].map((point, index) => (
-                        <li key={index} style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.75rem',
-                          marginBottom: '0.75rem',
-                          fontSize: '1rem',
-                          color: 'var(--text-secondary)'
-                        }}>
-                          <span style={{ color: '#667eea', fontSize: '1.2rem' }}>⏰</span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Draft Options Analysis */}
-            <section style={{ marginBottom: '6rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#667eea',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
+                  fontSize: '1.2rem',
+                  lineHeight: '1.6',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '800px',
+                  margin: '0 auto'
                 }}>
-                  DESIGN PROCESS
+                  With 640 million global MMA fans and a fantasy sports market exploding from $30.4B to $84.98B by 2032, there's a clear gap for a dedicated MMA fantasy platform.
                 </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '700',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  I came up with several options
-                </h2>
               </div>
 
-              {/* Draft Options */}
+              {/* Market Stats */}
               <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
@@ -536,115 +268,52 @@ export default function KommaProject() {
               }}>
                 {[
                   {
-                    title: 'New Draft Every Card',
-                    icon: '📝',
-                    description: 'Users pick a new team for every card they wish to play',
-                    frequency: 'High',
-                    engagement: 'High',
-                    recommended: false
+                    number: '640M',
+                    label: 'Global MMA Fans',
+                    description: 'Rapidly growing digital engagement'
                   },
                   {
-                    title: 'New Draft Every Pay-Per-View',
-                    icon: '💰',
-                    description: 'Users pick a new team between each PPV',
-                    frequency: 'Medium',
-                    engagement: 'High',
-                    recommended: true
+                    number: '$84.98B',
+                    label: 'Fantasy Sports Market by 2032',
+                    description: 'Up from $30.4B in 2023'
                   },
                   {
-                    title: 'New Draft Every Year',
-                    icon: '📅',
-                    description: 'Users pick a new team every calendar year',
-                    frequency: 'Low',
-                    engagement: 'Medium',
-                    recommended: false
+                    number: '37%',
+                    label: 'Aged 18-29',
+                    description: 'Mobile-native generation'
                   }
-                ].map((option, index) => (
+                ].map((stat, index) => (
                   <div key={index} style={{
                     background: 'white',
                     borderRadius: '20px',
                     padding: '2rem',
                     textAlign: 'center',
-                    boxShadow: option.recommended 
-                      ? '0 12px 40px rgba(102, 126, 234, 0.2)' 
-                      : '0 8px 30px rgba(0, 0, 0, 0.08)',
-                    border: option.recommended 
-                      ? '2px solid #667eea' 
-                      : '1px solid rgba(255, 255, 255, 0.2)',
-                    position: 'relative'
+                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
+                    border: '1px solid rgba(102, 126, 234, 0.1)'
                   }}>
-                    {option.recommended && (
-                      <div style={{
-                        position: 'absolute',
-                        top: '-12px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        background: '#667eea',
-                        color: 'white',
-                        padding: '0.5rem 1.5rem',
-                        borderRadius: '20px',
-                        fontSize: '0.8rem',
-                        fontWeight: '600'
-                      }}>
-                        Recommended
-                      </div>
-                    )}
-                    
                     <div style={{
-                      fontSize: '3rem',
-                      marginBottom: '1rem'
-                    }}>
-                      {option.icon}
-                    </div>
-                    
-                    <h3 style={{
-                      fontSize: '1.3rem',
+                      fontSize: '2.5rem',
                       fontWeight: '700',
-                      marginBottom: '1rem',
+                      color: '#667eea',
+                      marginBottom: '0.5rem'
+                    }}>
+                      {stat.number}
+                    </div>
+                    <h3 style={{
+                      fontSize: '1.1rem',
+                      fontWeight: '600',
+                      marginBottom: '0.5rem',
                       color: 'var(--primary-dark)'
                     }}>
-                      {option.title}
+                      {stat.label}
                     </h3>
-                    
                     <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.5',
+                      fontSize: '0.9rem',
                       color: 'var(--text-secondary)',
-                      marginBottom: '1.5rem'
+                      margin: 0
                     }}>
-                      {option.description}
+                      {stat.description}
                     </p>
-                    
-                    <div style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      gap: '1rem'
-                    }}>
-                      <div style={{ textAlign: 'left' }}>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                          Frequency
-                        </div>
-                        <div style={{
-                          fontSize: '0.9rem',
-                          fontWeight: '600',
-                          color: option.frequency === 'High' ? '#e53e3e' : option.frequency === 'Medium' ? '#dd6b20' : '#38a169'
-                        }}>
-                          {option.frequency}
-                        </div>
-                      </div>
-                      <div style={{ textAlign: 'right' }}>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                          Engagement
-                        </div>
-                        <div style={{
-                          fontSize: '0.9rem',
-                          fontWeight: '600',
-                          color: option.engagement === 'High' ? '#38a169' : '#dd6b20'
-                        }}>
-                          {option.engagement}
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 ))}
               </div>
@@ -657,23 +326,420 @@ export default function KommaProject() {
                 textAlign: 'center'
               }}>
                 <h3 style={{
-                  fontSize: '1.3rem',
+                  fontSize: '1.5rem',
                   fontWeight: '700',
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
-                  💡 Key Insight
+                  💡 Market Penetration Opportunity
                 </h3>
                 <p style={{
-                  fontSize: '1.1rem',
+                  fontSize: '1.2rem',
                   lineHeight: '1.6',
                   color: 'var(--text-secondary)',
-                  margin: 0
+                  margin: 0,
+                  maxWidth: '800px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
                 }}>
-                  The PPV model strikes the perfect balance between engagement and usability, offering regular interaction without overwhelming casual users.
+                  Current market fragmentation creates opening. Existing platforms are either large DFS operators treating MMA as an afterthought or small community sites lacking robust gaming features. No dedicated, comprehensive MMA fantasy platform exists.
                 </p>
               </div>
             </section>
+
+            {/* Competitive Analysis */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <p style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  color: '#667eea',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  COMPETITIVE LANDSCAPE
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '700',
+                  marginBottom: '1rem',
+                  color: 'var(--primary-dark)'
+                }}>
+                  How KOMMA stands apart
+                </h2>
+                <p style={{
+                  fontSize: '1.2rem',
+                  lineHeight: '1.6',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '800px',
+                  margin: '0 auto'
+                }}>
+                  Current market is fragmented between large DFS operators and small community sites, creating an opportunity for a dedicated MMA platform.
+                </p>
+              </div>
+
+              {/* Competitor Cards */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                gap: '2rem',
+                marginBottom: '3rem'
+              }}>
+                {[
+                  {
+                    name: 'DraftKings',
+                    category: 'Large DFS Operator',
+                    marketShare: '28% market share',
+                    strengths: ['Strong marketing', 'Comprehensive framework', 'Diverse contests'],
+                    weaknesses: ['Highly regulated', 'High competition', 'Complex rules', 'Limited international'],
+                    color: '#ff6b6b'
+                  },
+                  {
+                    name: 'Verdict MMA',
+                    category: 'Community Site',
+                    marketShare: '50K+ Downloads',
+                    strengths: ['Community-focused', 'Live scoring', 'XP/leveling', 'Multi-promotion info'],
+                    weaknesses: ['Bugs in fighter records', 'No overall user base given', 'Limited features'],
+                    color: '#4ecdc4'
+                  },
+                  {
+                    name: 'Underdog Fantasy',
+                    category: 'Pick\'Em Platform',
+                    marketShare: 'Huge user base',
+                    strengths: ['Pick\'Em popularity', 'Prop-betting feel', 'User-friendly', 'Impressive bonuses'],
+                    weaknesses: ['Primarily Pick\'Em focused', 'No MMA specialization'],
+                    color: '#45b7d1'
+                  },
+                  {
+                    name: 'KOMMA',
+                    category: 'Dedicated MMA Platform',
+                    marketShare: 'Launching Soon',
+                    strengths: ['MMA-first design', 'Balanced scoring system', 'Community features', 'Global market timing'],
+                    weaknesses: ['New to market'],
+                    color: '#667eea'
+                  }
+                ].map((competitor, index) => (
+                  <div key={index} style={{
+                    background: 'white',
+                    borderRadius: '20px',
+                    padding: '2rem',
+                    boxShadow: competitor.name === 'KOMMA' 
+                      ? '0 12px 40px rgba(102, 126, 234, 0.2)' 
+                      : '0 8px 30px rgba(0, 0, 0, 0.08)',
+                    border: competitor.name === 'KOMMA' 
+                      ? '2px solid #667eea' 
+                      : '1px solid rgba(255, 255, 255, 0.2)',
+                    position: 'relative'
+                  }}>
+                    {competitor.name === 'KOMMA' && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '-12px',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        background: '#667eea',
+                        color: 'white',
+                        padding: '0.5rem 1.5rem',
+                        borderRadius: '20px',
+                        fontSize: '0.8rem',
+                        fontWeight: '600'
+                      }}>
+                        Our Solution
+                      </div>
+                    )}
+                    
+                    <div style={{
+                      width: '60px',
+                      height: '60px',
+                      background: competitor.color,
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                      fontWeight: '700',
+                      fontSize: '1.2rem',
+                      marginBottom: '1rem'
+                    }}>
+                      {competitor.name.substring(0, 2)}
+                    </div>
+                    
+                    <h3 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginBottom: '0.5rem',
+                      color: 'var(--primary-dark)'
+                    }}>
+                      {competitor.name}
+                    </h3>
+                    
+                    <p style={{
+                      fontSize: '0.9rem',
+                      color: competitor.color,
+                      fontWeight: '600',
+                      marginBottom: '0.5rem'
+                    }}>
+                      {competitor.category}
+                    </p>
+                    
+                    <p style={{
+                      fontSize: '0.8rem',
+                      color: 'var(--text-secondary)',
+                      marginBottom: '1.5rem'
+                    }}>
+                      {competitor.marketShare}
+                    </p>
+                    
+                    <div style={{ marginBottom: '1rem' }}>
+                      <h4 style={{
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '0.5rem'
+                      }}>
+                        Strengths
+                      </h4>
+                      <ul style={{
+                        listStyle: 'none',
+                        padding: 0,
+                        margin: 0,
+                        fontSize: '0.85rem',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        {competitor.strengths.map((strength, idx) => (
+                          <li key={idx} style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            marginBottom: '0.25rem'
+                          }}>
+                            <span style={{ color: '#10b981', fontSize: '0.8rem' }}>✓</span>
+                            {strength}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 style={{
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '0.5rem'
+                      }}>
+                        Weaknesses
+                      </h4>
+                      <ul style={{
+                        listStyle: 'none',
+                        padding: 0,
+                        margin: 0,
+                        fontSize: '0.85rem',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        {competitor.weaknesses.map((weakness, idx) => (
+                          <li key={idx} style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            marginBottom: '0.25rem'
+                          }}>
+                            <span style={{ color: '#ef4444', fontSize: '0.8rem' }}>×</span>
+                            {weakness}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Understanding MMA Fans */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <p style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  color: '#667eea',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  TARGET AUDIENCE
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '700',
+                  marginBottom: '1rem',
+                  color: 'var(--primary-dark)'
+                }}>
+                  Understanding MMA fans beyond violence
+                </h2>
+                <p style={{
+                  fontSize: '1.2rem',
+                  lineHeight: '1.6',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '800px',
+                  margin: '0 auto'
+                }}>
+                  MMA fans are seeking more than just violence - they want technical appreciation, community connection, and ways to prove their knowledge.
+                </p>
+              </div>
+
+              {/* Core Motivations */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gap: '2rem',
+                marginBottom: '4rem'
+              }}>
+                {[
+                  {
+                    icon: '🏆',
+                    title: 'Sport Legitimacy',
+                    description: 'Embracing MMA as technical, skilled competition beyond just fighting'
+                  },
+                  {
+                    icon: '⭐',
+                    title: 'Fighter Adoration',
+                    description: 'Following individual athlete journeys, wanting behind-the-scenes access'
+                  },
+                  {
+                    icon: '🎭',
+                    title: 'Drama & Unpredictability',
+                    description: 'Drawn to thrilling, uncertain outcomes and compelling storylines'
+                  },
+                  {
+                    icon: '🎨',
+                    title: 'Technical Aesthetics',
+                    description: 'Appreciation for strategic artistry and technical execution'
+                  },
+                  {
+                    icon: '🏅',
+                    title: 'Vicarious Achievement',
+                    description: 'Feeling accomplishment through favorite fighter wins'
+                  },
+                  {
+                    icon: '👥',
+                    title: 'Community Connection',
+                    description: 'Seeking to share experiences and compete with peers'
+                  }
+                ].map((motivation, index) => (
+                  <div key={index} style={{
+                    background: 'white',
+                    borderRadius: '16px',
+                    padding: '1.5rem',
+                    textAlign: 'center',
+                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
+                    border: '1px solid rgba(102, 126, 234, 0.1)'
+                  }}>
+                    <div style={{
+                      fontSize: '2.5rem',
+                      marginBottom: '1rem'
+                    }}>
+                      {motivation.icon}
+                    </div>
+                    <h3 style={{
+                      fontSize: '1.1rem',
+                      fontWeight: '700',
+                      marginBottom: '0.75rem',
+                      color: 'var(--primary-dark)'
+                    }}>
+                      {motivation.title}
+                    </h3>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      lineHeight: '1.5',
+                      color: 'var(--text-secondary)',
+                      margin: 0
+                    }}>
+                      {motivation.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Digital Behavior & Pain Points */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+                gap: '3rem'
+              }}>
+                <div style={{
+                  background: 'rgba(102, 126, 234, 0.05)',
+                  padding: '2rem',
+                  borderRadius: '20px'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.4rem',
+                    fontWeight: '700',
+                    marginBottom: '1rem',
+                    color: 'var(--primary-dark)'
+                  }}>
+                    📱 Digital Behavior Patterns
+                  </h3>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      'Fight Night Ritual: Reddit, YouTube, TikTok for discussion',
+                      'Multi-Platform Engagement: Fragmented experience',
+                      'Social Virality: Leverage rivalries for organic growth',
+                      'Active Participation: Want engagement, not passive consumption'
+                    ].map((behavior, index) => (
+                      <li key={index} style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '0.75rem',
+                        marginBottom: '1rem',
+                        fontSize: '1rem',
+                        lineHeight: '1.5',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        <span style={{ color: '#667eea', fontSize: '1rem', fontWeight: '700' }}>▶</span>
+                        {behavior}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div style={{
+                  background: 'rgba(239, 68, 68, 0.05)',
+                  padding: '2rem',
+                  borderRadius: '20px'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.4rem',
+                    fontWeight: '700',
+                    marginBottom: '1rem',
+                    color: 'var(--primary-dark)'
+                  }}>
+                    😤 Pain Points & Gaps
+                  </h3>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      'Subpar User Experience: Slow payouts, complex rules',
+                      'No Unified Community Hub: Missing centralized platform',
+                      'Limited Personalization: Lack of AI-driven insights',
+                      'Scoring System Issues: Current systems favor grapplers'
+                    ].map((pain, index) => (
+                      <li key={index} style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '0.75rem',
+                        marginBottom: '1rem',
+                        fontSize: '1rem',
+                        lineHeight: '1.5',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        <span style={{ color: '#ef4444', fontSize: '1rem', fontWeight: '700' }}>⚡</span>
+                        {pain}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+
 
           </div>
         </div>
