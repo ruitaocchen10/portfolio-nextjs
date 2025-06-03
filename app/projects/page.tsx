@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Navbar from '../../components/Navbar';
 
+// Update the projects array in app/projects/page.tsx
+
 const projects = [
   {
     id: 'komma',
@@ -18,11 +20,23 @@ const projects = [
     color: '#667eea'
   },
   {
+    id: 'macro-meal',
+    title: 'Macro Meal Generator',
+    subtitle: 'AI-Powered Nutrition App',
+    description: 'An AI-powered web application that eliminates the daily mental overhead of macro tracking by automatically generating personalized meal plans',
+    image: '/images/MacroMealCoverMockup.png',
+    tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
+    duration: '6 months',
+    role: 'Product Designer & Developer',
+    year: '2024-Present',
+    color: '#22c55e'
+  },
+  {
     id: 'prommuni',
     title: 'Prommuni',
     subtitle: 'SaaS Web and Mobile Platform',
     description: 'A service for young professionals to find roommates and leases with similar minded people',
-    image: '/images/PrommuniCoverMockup.png', // Updated to match your naming pattern
+    image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
     duration: '8 months',
     role: 'Product Designer',
@@ -34,7 +48,7 @@ const projects = [
     title: 'ATT',
     subtitle: 'Mobile App Redesign',
     description: 'Mobile app redesign focused on adding features to a gym app to improve member retention and engagement',
-    image: '/images/ATTCoverMockup.png', // Updated to match your naming pattern
+    image: '/images/ATTCoverMockup.png',
     tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
     duration: '6 months',
     role: 'UI/UX Designer',

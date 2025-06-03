@@ -165,52 +165,52 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Featured Projects */}
-          <div>
-            <h4 style={{
-              fontSize: '1.2rem',
-              fontWeight: '600',
-              marginBottom: '1.5rem',
-              color: 'white'
-            }}>
-              Featured Projects
-            </h4>
-            <nav style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1rem'
-            }}>
-              {[
-                { name: 'KOMMA', href: '/projects/komma' },
-                { name: 'ATT', href: '/projects/att' },
-                { name: 'SellMax', href: '/projects/sellmax' },
-                { name: 'Prommuni', href: '/projects/prommuni' }
-              ].map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.href}
-                  style={{
-                    color: 'rgba(255, 255, 255, 0.8)',
-                    textDecoration: 'none',
-                    fontSize: '1rem',
-                    transition: 'all 0.3s ease',
-                    display: 'inline-block',
-                    width: 'fit-content'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.color = 'white';
-                    e.currentTarget.style.transform = 'translateX(8px)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
-                    e.currentTarget.style.transform = 'translateX(0)';
-                  }}
-                >
-                  {project.name}
-                </Link>
-              ))}
-            </nav>
-          </div>
+{/* Featured Projects */}
+<div>
+  <h4 style={{
+    fontSize: '1.2rem',
+    fontWeight: '600',
+    marginBottom: '1.5rem',
+    color: 'white'
+  }}>
+    Featured Projects
+  </h4>
+  <nav style={{
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem'
+  }}>
+    {[
+      { name: 'KOMMA', href: '/projects/komma' },
+      { name: 'Macro Meal Generator', href: '/projects/macro-meal' },
+      { name: 'ATT', href: '/projects/att' },
+      { name: 'Prommuni', href: '/projects/prommuni' }
+    ].map((project, index) => (
+      <Link
+        key={index}
+        href={project.href}
+        style={{
+          color: 'rgba(255, 255, 255, 0.8)',
+          textDecoration: 'none',
+          fontSize: '1rem',
+          transition: 'all 0.3s ease',
+          display: 'inline-block',
+          width: 'fit-content'
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.color = 'white';
+          e.currentTarget.style.transform = 'translateX(8px)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
+          e.currentTarget.style.transform = 'translateX(0)';
+        }}
+      >
+        {project.name}
+      </Link>
+    ))}
+  </nav>
+</div>
 
           {/* Get In Touch */}
           <div>

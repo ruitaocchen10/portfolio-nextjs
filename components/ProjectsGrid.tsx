@@ -15,6 +15,15 @@ const projects = [
     color: '#667eea'
   },
   {
+    id: 'macro-meal',
+    title: 'Macro Meal Generator',
+    subtitle: 'AI-Powered Nutrition App',
+    description: 'An AI-powered web application that eliminates the daily mental overhead of macro tracking by automatically generating personalized meal plans',
+    image: '/images/MacroMealCoverMockup.png',
+    tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
+    color: '#22c55e'
+  },
+  {
     id: 'prommuni',
     title: 'Prommuni',
     subtitle: 'SaaS Web and Mobile Platform',
@@ -22,15 +31,6 @@ const projects = [
     image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
     color: '#43e97b'
-  },
-  {
-    id: 'att',
-    title: 'ATT',
-    subtitle: 'Mobile App Redesign',
-    description: 'Mobile app redesign focused on adding features to a gym app to improve member retention and engagement',
-    image: '/images/ATTCoverMockup.png',
-    tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
-    color: '#f093fb'
   }
 ];
 
@@ -106,7 +106,7 @@ export default function ProjectsGrid() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
           gap: '2.5rem',
-          alignItems: 'stretch' // Changed from 'start' to 'stretch'
+          alignItems: 'stretch'
         }}>
           {projects.map((project, index) => (
             <Link 
@@ -130,9 +130,9 @@ export default function ProjectsGrid() {
                 cursor: 'pointer',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 position: 'relative',
-                height: '100%', // Added to make all cards same height
-                display: 'flex', // Added flexbox
-                flexDirection: 'column' // Added to stack content vertically
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
               }}>
                 {/* Project Image */}
                 <div style={{
@@ -150,12 +150,11 @@ export default function ProjectsGrid() {
                       style={{
                         objectFit: 'cover'
                       }}
-                      quality={90} // High quality (default is 75)
-                      priority={index < 2} // Load first 2 images immediately
+                      quality={90}
+                      priority={index < 2}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       onLoad={() => handleImageLoad(project.id)}
                       onError={() => handleImageError(project.id)}
-                      // Disable Next.js optimization if it's causing issues
                       unoptimized={false}
                     />
                   )}
@@ -207,7 +206,7 @@ export default function ProjectsGrid() {
                   flex: 1,
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between' // Distribute content evenly
+                  justifyContent: 'space-between'
                 }}>
                   {/* Top Content */}
                   <div>
