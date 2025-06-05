@@ -48,15 +48,15 @@ export default function Navbar() {
             transition: 'transform 0.3s ease',
             textDecoration: 'none'
           }}
-          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
         >
           <Image 
-            src="/images/Logo Dark.png" // Add your logo to public/images/logo.png
+            src="/images/Logo Dark.png"
             alt="Ruitao Logo" 
             width={180} 
             height={50}
             style={{ borderRadius: '8px' }}
+            priority
+            sizes="180px"
           />
         </Link>
         
@@ -79,18 +79,7 @@ export default function Navbar() {
                   padding: '0.75rem 1.25rem',
                   borderRadius: '12px',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  letterSpacing: '-0.01em',
-                  position: 'relative'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'linear-gradient(135deg, rgba(45, 55, 72, 0.05), rgba(45, 55, 72, 0.1))';
-                  e.currentTarget.style.color = 'var(--primary-dark)';
-                  e.currentTarget.style.transform = 'translateY(-1px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'transparent';
-                  e.currentTarget.style.color = 'var(--text-primary)';
-                  e.currentTarget.style.transform = 'translateY(0)';
+                  letterSpacing: '-0.01em'
                 }}
               >
                 {item}
@@ -111,25 +100,7 @@ export default function Navbar() {
             borderRadius: '50px',
             transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             boxShadow: '0 4px 20px rgba(45, 55, 72, 0.2)',
-            letterSpacing: '-0.01em',
-            position: 'relative',
-            overflow: 'hidden',
-            border: 'none',
-            cursor: 'pointer'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)';
-            e.currentTarget.style.boxShadow = '0 8px 30px rgba(45, 55, 72, 0.3)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0) scale(1)';
-            e.currentTarget.style.boxShadow = '0 4px 20px rgba(45, 55, 72, 0.2)';
-          }}
-          onMouseDown={(e) => {
-            e.currentTarget.style.transform = 'translateY(0) scale(0.98)';
-          }}
-          onMouseUp={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)';
+            letterSpacing: '-0.01em'
           }}
         >
           Contact Me

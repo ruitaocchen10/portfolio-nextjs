@@ -1,0 +1,236 @@
+/* Hero Section Styles */
+.heroSection {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .backgroundDecoration1 {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(135deg, rgba(45, 55, 72, 0.05), rgba(45, 55, 72, 0.02));
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .backgroundDecoration2 {
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, rgba(45, 55, 72, 0.03), rgba(45, 55, 72, 0.01));
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .greeting {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(45, 55, 72, 0.1);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+  }
+  
+  .title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-darker));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 500px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .primaryButton {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 30px rgba(45, 55, 72, 0.2);
+    cursor: pointer;
+  }
+  
+  .primaryButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(45, 55, 72, 0.3);
+  }
+  
+  .secondaryButton {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border: 2px solid var(--primary-dark);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .secondaryButton:hover {
+    background: var(--primary-dark);
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  .stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(45, 55, 72, 0.1);
+  }
+  
+  .statItem {
+    text-align: center;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+  }
+  
+  .statLabel {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .visualContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .heroImageContainer {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(45, 55, 72, 0.1), rgba(45, 55, 72, 0.05));
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    border-radius: 30px;
+  }
+  
+  .floatingCard {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+  }
+  
+  .floatingCard1 {
+    top: 20px;
+    right: 20px;
+    transform: rotate(5deg);
+  }
+  
+  .floatingCard2 {
+    bottom: 30px;
+    left: 30px;
+    transform: rotate(-5deg);
+  }
+  
+  .scrollIndicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .scrollLine {
+    width: 2px;
+    height: 30px;
+    background: var(--primary-dark);
+    border-radius: 2px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 2rem 1.5rem;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 3rem;
+    }
+    
+    .heroImageContainer {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .buttonGroup {
+      justify-content: center;
+    }
+    
+    .stats {
+      justify-content: center;
+    }
+  }

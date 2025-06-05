@@ -12,15 +12,17 @@ export default function HeroSection() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    // Check on mount
     checkMobile();
-
-    // Add event listener for resize
     window.addEventListener('resize', checkMobile);
-
-    // Cleanup
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section style={{
@@ -32,7 +34,7 @@ export default function HeroSection() {
       position: 'relative',
       overflow: 'hidden'
     }}>
-      {/* Background decoration */}
+      {/* Background decorations */}
       <div style={{
         position: 'absolute',
         top: '20%',
@@ -115,12 +117,7 @@ export default function HeroSection() {
             justifyContent: isMobile ? 'center' : 'flex-start'
           }}>
             <button 
-              onClick={() => {
-                const projectsSection = document.getElementById('projects');
-                if (projectsSection) {
-                  projectsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={handleScrollToProjects}
               style={{
                 background: 'linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%)',
                 color: 'white',
@@ -132,14 +129,6 @@ export default function HeroSection() {
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 boxShadow: '0 8px 30px rgba(45, 55, 72, 0.2)',
                 cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-3px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(45, 55, 72, 0.3)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 8px 30px rgba(45, 55, 72, 0.2)';
               }}
             >
               View My Work
@@ -158,22 +147,12 @@ export default function HeroSection() {
                 transition: 'all 0.3s ease',
                 display: 'inline-block'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'var(--primary-dark)';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.transform = 'translateY(-3px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.color = 'var(--primary-dark)';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}
             >
               Let's Connect
             </Link>
           </div>
 
-          {/* Stats or highlights */}
+          {/* Stats */}
           <div style={{
             display: 'flex',
             gap: '3rem',
@@ -204,7 +183,6 @@ export default function HeroSection() {
           alignItems: 'center',
           position: 'relative'
         }}>
-          {/* Hero image or illustration */}
           <div style={{
             width: isMobile ? '300px' : '500px',
             height: isMobile ? '300px' : '500px',
@@ -218,7 +196,7 @@ export default function HeroSection() {
           }}>
             
             <Image
-              src="/images/MeCover.JPG" // Add your hero image to public/images/
+              src="/images/MeCover.JPG"
               alt="Ruitao Cover Photo"
               fill
               style={{
@@ -226,6 +204,8 @@ export default function HeroSection() {
                 borderRadius: '30px'
               }}
               priority
+              sizes="(max-width: 768px) 300px, 500px"
+              quality={isMobile ? 75 : 85}
             />
 
             {/* Floating project previews */}
