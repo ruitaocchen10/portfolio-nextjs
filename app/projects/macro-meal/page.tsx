@@ -183,6 +183,104 @@ export default function MacroMealProject() {
           </div>
         </section>
 
+                {/* Try It Yourself Section */}
+                <section style={{
+          padding: '4rem 3rem',
+          background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+          borderBottom: '1px solid rgba(34, 197, 94, 0.1)'
+        }}>
+          <div style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              display: 'inline-block',
+              padding: '0.5rem 1.5rem',
+              background: 'rgba(34, 197, 94, 0.1)',
+              color: '#22c55e',
+              borderRadius: '50px',
+              marginBottom: '1.5rem',
+              fontSize: '0.9rem',
+              fontWeight: '600'
+            }}>
+              🚀 Live Demo Available
+            </div>
+
+            <h2 style={{
+              fontSize: '2.5rem',
+              fontWeight: '700',
+              marginBottom: '1rem',
+              color: 'var(--primary-dark)'
+            }}>
+              Experience the AI Meal Generator
+            </h2>
+
+            <p style={{
+              fontSize: '1.2rem',
+              lineHeight: '1.6',
+              color: 'var(--text-secondary)',
+              marginBottom: '2.5rem',
+              maxWidth: '600px',
+              margin: '0 auto 2.5rem auto'
+            }}>
+              See the AI-powered meal planning in action. Generate personalized meals that hit your exact macro targets in seconds.
+            </p>
+
+            <div style={{
+              display: 'flex',
+              gap: '1.5rem',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexWrap: 'wrap'
+            }}>
+              <a
+                href="https://macro-meal-generator.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '1.25rem 2.5rem',
+                  background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                  color: 'white',
+                  textDecoration: 'none',
+                  fontWeight: '600',
+                  fontSize: '1.1rem',
+                  borderRadius: '50px',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  boxShadow: '0 8px 30px rgba(34, 197, 94, 0.3)',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-3px) scale(1.02)';
+                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(34, 197, 94, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(34, 197, 94, 0.3)';
+                }}
+              >
+                <span style={{ fontSize: '1.3rem' }}>🍽️</span>
+                Try the Meal Generator
+                <span style={{ fontSize: '1.2rem' }}>→</span>
+              </a>
+
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                color: 'var(--text-secondary)',
+                fontSize: '0.95rem'
+              }}>
+                <span style={{ fontSize: '1.1rem' }}>⚡</span>
+                No signup required • Instant results
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Main Content */}
         <div style={{ 
           backgroundColor: 'white',
@@ -1129,6 +1227,301 @@ export default function MacroMealProject() {
                       </ul>
                     </div>
                   ))}
+                </div>
+              </div>
+            </section>
+            {/* Iterative Improvements */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <p style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  color: '#22c55e',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  ITERATIVE IMPROVEMENTS
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '700',
+                  marginBottom: '1rem',
+                  color: 'var(--primary-dark)'
+                }}>
+                  Addressing bugs and user feedback
+                </h2>
+                <p style={{
+                  fontSize: '1.2rem',
+                  lineHeight: '1.6',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '800px',
+                  margin: '0 auto'
+                }}>
+                  Based on user testing feedback and technical challenges, I implemented several key improvements to enhance accuracy, flexibility, and user experience.
+                </p>
+              </div>
+
+              {/* Improvements Grid */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                gap: '2rem',
+                marginBottom: '4rem'
+              }}>
+                {[
+                  {
+                    icon: '🍽️',
+                    title: 'Flexible Meal Count',
+                    problem: 'Users were forced into a 3-meal structure that didn\'t fit their eating patterns',
+                    solution: 'Added ability to choose 2-6 meals per day',
+                    impact: 'Accommodates intermittent fasters, frequent snackers, and various lifestyle preferences',
+                    color: '#f59e0b'
+                  },
+                  {
+                    icon: '🧠',
+                    title: 'AI Prompt Engineering',
+                    problem: 'Generated meals sometimes had unrealistic portions or poor macro accuracy (±15% range)',
+                    solution: 'Refined prompts with specific portion guidelines and macro constraints',
+                    impact: 'Improved macro accuracy to ±5% range and more realistic serving sizes',
+                    color: '#8b5cf6'
+                  },
+                  {
+                    icon: '📊',
+                    title: 'Food Database API Integration',
+                    problem: 'Relying solely on AI for nutrition data led to inconsistencies and inaccuracies',
+                    solution: 'Integrated USDA FoodData Central API for verified nutrition information',
+                    impact: 'Ensured consistent, accurate nutrition data and improved user trust',
+                    color: '#06b6d4'
+                  }
+                ].map((improvement, index) => (
+                  <div key={index} style={{
+                    background: 'white',
+                    borderRadius: '20px',
+                    padding: '2rem',
+                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
+                    border: `2px solid ${improvement.color}20`,
+                    transition: 'transform 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-4px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                  >
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '1rem',
+                      marginBottom: '1.5rem'
+                    }}>
+                      <div style={{
+                        fontSize: '2.5rem'
+                      }}>
+                        {improvement.icon}
+                      </div>
+                      <h3 style={{
+                        fontSize: '1.4rem',
+                        fontWeight: '700',
+                        color: 'var(--primary-dark)',
+                        margin: 0
+                      }}>
+                        {improvement.title}
+                      </h3>
+                    </div>
+                    
+                    <div style={{ marginBottom: '1.5rem' }}>
+                      <h4 style={{
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        color: '#ef4444',
+                        marginBottom: '0.5rem'
+                      }}>
+                        Problem:
+                      </h4>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        lineHeight: '1.5',
+                        color: 'var(--text-secondary)',
+                        margin: 0
+                      }}>
+                        {improvement.problem}
+                      </p>
+                    </div>
+
+                    <div style={{ marginBottom: '1.5rem' }}>
+                      <h4 style={{
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        color: '#22c55e',
+                        marginBottom: '0.5rem'
+                      }}>
+                        Solution:
+                      </h4>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        lineHeight: '1.5',
+                        color: 'var(--text-secondary)',
+                        margin: 0
+                      }}>
+                        {improvement.solution}
+                      </p>
+                    </div>
+
+                    <div style={{
+                      padding: '1rem',
+                      background: `${improvement.color}10`,
+                      borderRadius: '12px',
+                      borderLeft: `4px solid ${improvement.color}`
+                    }}>
+                      <h4 style={{
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        color: improvement.color,
+                        marginBottom: '0.5rem'
+                      }}>
+                        Impact:
+                      </h4>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        lineHeight: '1.5',
+                        color: 'var(--primary-dark)',
+                        fontWeight: '500',
+                        margin: 0
+                      }}>
+                        {improvement.impact}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Technical Implementation Details */}
+              <div style={{
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                padding: '3rem',
+                borderRadius: '24px'
+              }}>
+                <h3 style={{
+                  fontSize: '1.8rem',
+                  fontWeight: '700',
+                  marginBottom: '2rem',
+                  color: 'var(--primary-dark)',
+                  textAlign: 'center'
+                }}>
+                  🔧 Technical Implementation Details
+                </h3>
+                
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                  gap: '2rem'
+                }}>
+                  <div style={{
+                    background: 'white',
+                    padding: '2rem',
+                    borderRadius: '16px'
+                  }}>
+                    <h4 style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      marginBottom: '1rem',
+                      color: 'var(--primary-dark)'
+                    }}>
+                      Meal Count Flexibility
+                    </h4>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                      {[
+                        'Dynamic form validation based on selected meal count',
+                        'Proportional macro distribution across chosen meals',
+                        'Calorie splitting algorithm for even distribution',
+                        'User preference storage for future sessions'
+                      ].map((detail, index) => (
+                        <li key={index} style={{
+                          fontSize: '0.95rem',
+                          color: 'var(--text-secondary)',
+                          marginBottom: '0.5rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.5rem'
+                        }}>
+                          <span style={{ color: '#22c55e' }}>▶</span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div style={{
+                    background: 'white',
+                    padding: '2rem',
+                    borderRadius: '16px'
+                  }}>
+                    <h4 style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      marginBottom: '1rem',
+                      color: 'var(--primary-dark)'
+                    }}>
+                      Enhanced AI Prompting
+                    </h4>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                      {[
+                        'Structured prompts with macro constraints',
+                        'Portion size guidelines and realistic servings',
+                        'Context awareness for dietary restrictions',
+                        'Fallback logic for edge cases'
+                      ].map((detail, index) => (
+                        <li key={index} style={{
+                          fontSize: '0.95rem',
+                          color: 'var(--text-secondary)',
+                          marginBottom: '0.5rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.5rem'
+                        }}>
+                          <span style={{ color: '#22c55e' }}>▶</span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div style={{
+                    background: 'white',
+                    padding: '2rem',
+                    borderRadius: '16px'
+                  }}>
+                    <h4 style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      marginBottom: '1rem',
+                      color: 'var(--primary-dark)'
+                    }}>
+                      API Integration
+                    </h4>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                      {[
+                        'USDA FoodData Central API integration',
+                        'Nutrition data validation and caching',
+                        'Automatic data enrichment for common foods',
+                        'Error handling and graceful degradation'
+                      ].map((detail, index) => (
+                        <li key={index} style={{
+                          fontSize: '0.95rem',
+                          color: 'var(--text-secondary)',
+                          marginBottom: '0.5rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.5rem'
+                        }}>
+                          <span style={{ color: '#22c55e' }}>▶</span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </section>
