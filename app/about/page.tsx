@@ -121,29 +121,6 @@ export default function About() {
                   Download Resume
                 </a>
               </div>
-
-              {/* Stats or highlights */}
-              <div style={{
-                display: 'flex',
-                gap: '3rem',
-                marginTop: '4rem',
-                paddingTop: '2rem',
-                borderTop: '1px solid rgba(45, 55, 72, 0.1)',
-                justifyContent: 'flex-start'
-              }}>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>4+</div>
-                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Projects Completed</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>5+</div>
-                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Years Experience</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>∞</div>
-                  <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Ideas & Passion</div>
-                </div>
-              </div>
             </div>
 
             {/* Right - Profile Image */}

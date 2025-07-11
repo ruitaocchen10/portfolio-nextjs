@@ -14,7 +14,7 @@
 body {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 75px;
   font-family: var(--font-kumbh-sans), var(--font-ubuntu), system-ui, sans-serif;
   background-color: var(--background-light);
   color: var(--text-primary);

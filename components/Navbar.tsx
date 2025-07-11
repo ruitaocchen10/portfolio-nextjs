@@ -24,7 +24,7 @@ export default function Navbar() {
         left: 0,
         right: 0,
         zIndex: 1000,
-        padding: isScrolled ? '1rem 2rem' : '1.25rem 2rem',
+        padding: isScrolled ? '.75rem 2rem' : '1rem 2rem',
         background: isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.8)',
         backdropFilter: isScrolled ? 'blur(30px)' : 'blur(25px)',
         WebkitBackdropFilter: isScrolled ? 'blur(30px)' : 'blur(25px)',

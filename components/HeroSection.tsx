@@ -29,7 +29,7 @@ export default function HeroSection() {
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
-      padding: isMobile ? '2rem 1.5rem' : '2rem 3rem',
+      padding: isMobile ? '1rem 1.5rem' : '2rem 3rem',
       background: 'linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%)',
       position: 'relative',
       overflow: 'hidden'
@@ -105,8 +105,7 @@ export default function HeroSection() {
             marginBottom: '3rem',
             maxWidth: '500px'
           }}>
-            I craft digital experiences that blend beautiful design with seamless functionality. 
-            I am passionate about solving problems through user-centered design.
+            I'm building experience in all aspects of the product cycle. Using my background as a marketing major and my skills in user-centered design and development, I'm building useful products more efficiently than ever. 
           </p>
 
           <div style={{
@@ -152,28 +151,7 @@ export default function HeroSection() {
             </Link>
           </div>
 
-          {/* Stats */}
-          <div style={{
-            display: 'flex',
-            gap: '3rem',
-            marginTop: '4rem',
-            paddingTop: '2rem',
-            borderTop: '1px solid rgba(45, 55, 72, 0.1)',
-            justifyContent: isMobile ? 'center' : 'flex-start'
-          }}>
-            <div>
-              <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>4+</div>
-              <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Projects Completed</div>
-            </div>
-            <div>
-              <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>5+</div>
-              <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Years Experience</div>
-            </div>
-            <div>
-              <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--primary-dark)' }}>∞</div>
-              <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Ideas & Passion</div>
-            </div>
-          </div>
+
         </div>
 
         {/* Right side - Visual content */}
@@ -207,47 +185,6 @@ export default function HeroSection() {
               sizes="(max-width: 768px) 300px, 500px"
               quality={isMobile ? 75 : 85}
             />
-
-            {/* Floating project previews */}
-            <div style={{
-              position: 'absolute',
-              top: '20px',
-              right: '20px',
-              width: '120px',
-              height: '80px',
-              background: 'white',
-              borderRadius: '12px',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '0.8rem',
-              fontWeight: '600',
-              color: 'var(--primary-dark)',
-              transform: 'rotate(5deg)'
-            }}>
-              KOMMA
-            </div>
-            
-            <div style={{
-              position: 'absolute',
-              bottom: '30px',
-              left: '30px',
-              width: '120px',
-              height: '80px',
-              background: 'white',
-              borderRadius: '12px',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '0.8rem',
-              fontWeight: '600',
-              color: 'var(--primary-dark)',
-              transform: 'rotate(-5deg)'
-            }}>
-              ATT
-            </div>
           </div>
         </div>
       </div>

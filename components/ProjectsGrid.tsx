@@ -89,16 +89,7 @@ export default function ProjectsGrid() {
           }}>
             Recent Projects
           </h2>
-          
-          <p style={{
-            fontSize: '1.2rem',
-            color: 'var(--text-secondary)',
-            maxWidth: '600px',
-            margin: '0 auto',
-            lineHeight: '1.6'
-          }}>
-            Explore my latest UX/UI design projects, each showcasing different aspects of user-centered design and creative problem solving.
-          </p>
+        
         </div>
 
         {/* Projects Grid */}
