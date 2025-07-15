@@ -86,7 +86,7 @@ export default function ATTProject() {
             {/* Project Details */}
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
+              gridTemplateColumns: '1fr 1fr 1fr',
               gap: '2rem',
               marginBottom: '2rem'
             }}>
@@ -100,18 +100,10 @@ export default function ATTProject() {
               </div>
               <div>
                 <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  DURATION
-                </h4>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  5 months
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
                   TIMELINE
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  August - November 2024
+                  July - November 2024
                 </p>
               </div>
               <div>
@@ -1060,10 +1052,10 @@ export default function ATTProject() {
               gap: '2rem'
             }}>
               {[
-                { name: 'KOMMA', href: '/projects/komma', description: 'Social Sports Platform' },
-                { name: 'Prommuni', href: '/projects/prommuni', description: 'SaaS Platform' },
-                { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
-              ].map((project, index) => (
+  { name: 'Prommuni', href: '/projects/prommuni', description: 'SaaS Platform' },
+  { name: 'Macro Meal Generator', href: '/projects/macro-meal', description: 'AI-Powered Nutrition' },
+  { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
+].map((project, index) => (
                 <Link
                   key={index}
                   href={project.href}

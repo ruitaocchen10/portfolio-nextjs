@@ -8,27 +8,14 @@ import Navbar from '../../components/Navbar';
 
 const projects = [
   {
-    id: 'komma',
-    title: 'KOMMA',
-    subtitle: 'Social Sports Platform',
-    description: 'Full stack design and development of a fantasy sports app for fans of Mixed-Martial Arts',
-    image: '/images/KOMMACoverMockup.png',
-    tags: ['Full Stack Development', 'UX Research', 'UI Design', 'Figma'],
-    duration: '2 years',
-    role: 'Founder',
-    year: '2023-Present',
-    color: '#667eea'
-  },
-  {
     id: 'macro-meal',
     title: 'Macro Meal Generator',
     subtitle: 'AI-Powered Nutrition App',
     description: 'An AI-powered web application that eliminates the daily mental overhead of macro tracking by automatically generating personalized meal plans',
     image: '/images/MacroMealCoverMockup.png',
     tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
-    duration: '6 months',
     role: 'Product Designer & Developer',
-    year: '2024-Present',
+    year: '2025',
     color: '#22c55e'
   },
   {
@@ -38,7 +25,6 @@ const projects = [
     description: 'A service for young professionals to find roommates and leases with similar minded people',
     image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
-    duration: '8 months',
     role: 'Product Designer',
     year: '2024 - Present',
     color: '#43e97b'
@@ -50,7 +36,6 @@ const projects = [
     description: 'Mobile app redesign focused on adding features to a gym app to improve member retention and engagement',
     image: '/images/ATTCoverMockup.png',
     tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
-    duration: '6 months',
     role: 'UI/UX Designer',
     year: '2024',
     color: '#f093fb'
@@ -62,8 +47,7 @@ const projects = [
     description: 'Updating a car quoting questionnaire to reduce user abandonment rate',
     image: '/images/SellMaxCoverMockup.png',
     tags: ['Web Design', 'Conversion', 'Analytics', 'Figma'],
-    duration: '5 months',
-    role: 'Freelance Design Consultant',
+    role: 'UI/UX Designer',
     year: '2023',
     color: '#4facfe'
   }
@@ -291,14 +275,6 @@ export default function Projects() {
                         </div>
                         <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
                           {project.role}
-                        </div>
-                      </div>
-                      <div>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                          DURATION
-                        </div>
-                        <div style={{ fontSize: '0.95rem', fontWeight: '600', color: 'var(--primary-dark)' }}>
-                          {project.duration}
                         </div>
                       </div>
                     </div>

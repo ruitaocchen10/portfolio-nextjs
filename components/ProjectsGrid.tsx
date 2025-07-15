@@ -4,16 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
+// Replace the projects array in components/ProjectsGrid.tsx:
+
 const projects = [
-  {
-    id: 'komma',
-    title: 'KOMMA',
-    subtitle: 'Social Sports Platform',
-    description: 'Full stack design and development of a fantasy sports app for fans of Mixed-Martial Arts',
-    image: '/images/KOMMACoverMockup.png',
-    tags: ['Full Stack Development', 'UX Research', 'UI Design', 'Figma'],
-    color: '#667eea'
-  },
   {
     id: 'macro-meal',
     title: 'Macro Meal Generator',
@@ -31,6 +24,24 @@ const projects = [
     image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
     color: '#43e97b'
+  },
+  {
+    id: 'att',
+    title: 'ATT',
+    subtitle: 'Mobile App Redesign',
+    description: 'Redesigning the ATT mobile application to improve user experience and modernize the interface',
+    image: '/images/ATTCoverMockup.png',
+    tags: ['Mobile Design', 'UX Research', 'UI Design', 'Figma'],
+    color: '#f093fb'
+  },
+  {
+    id: 'sellmax',
+    title: 'SellMax',
+    subtitle: 'Web App Updates',
+    description: 'Redesigning a car quote questionnaire to reduce user abandonment and improve conversion rates',
+    image: '/images/SellMaxCoverMockup.png',
+    tags: ['Conversion Optimization', 'Web Design', 'UX Research', 'Figma'],
+    color: '#4facfe'
   }
 ];
 

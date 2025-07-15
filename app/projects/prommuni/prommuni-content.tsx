@@ -86,7 +86,7 @@ export default function PrommuniProject() {
             {/* Project Details */}
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
+              gridTemplateColumns: '1fr 1fr 1fr',
               gap: '2rem',
               marginBottom: '2rem'
             }}>
@@ -96,14 +96,6 @@ export default function PrommuniProject() {
                 </h4>
                 <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
                   Product Designer
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  DURATION
-                </h4>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  8 months
                 </p>
               </div>
               <div>
@@ -716,10 +708,10 @@ export default function PrommuniProject() {
               gap: '2rem'
             }}>
               {[
-                { name: 'KOMMA', href: '/projects/komma', description: 'Social Sports Platform' },
-                { name: 'ATT', href: '/projects/att', description: 'Mobile App Redesign' },
-                { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
-              ].map((project, index) => (
+  { name: 'ATT', href: '/projects/att', description: 'Mobile App Redesign' },
+  { name: 'Macro Meal Generator', href: '/projects/macro-meal', description: 'AI-Powered Nutrition' },
+  { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
+].map((project, index) => (
                 <Link
                   key={index}
                   href={project.href}
