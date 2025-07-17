@@ -16,7 +16,7 @@ const projects = [
     tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
     role: 'Product Designer & Developer',
     year: '2025',
-    color: '#22c55e'
+    color: '#f97316'
   },
   {
     id: 'prommuni',
@@ -27,7 +27,7 @@ const projects = [
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
     role: 'Product Designer',
     year: '2024 - Present',
-    color: '#43e97b'
+    color: '#4facfe'
   },
   {
     id: 'att',
@@ -49,7 +49,7 @@ const projects = [
     tags: ['Web Design', 'Conversion', 'Analytics', 'Figma'],
     role: 'UI/UX Designer',
     year: '2023',
-    color: '#4facfe'
+    color: '#22c55e'
   }
 ];
 

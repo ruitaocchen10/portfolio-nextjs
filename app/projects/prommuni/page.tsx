@@ -106,7 +106,7 @@ export default function PrommuniProtected() {
               fontSize: '2.5rem',
               fontWeight: '700',
               marginBottom: '0.5rem',
-              background: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+              background: 'linear-gradient(135deg, #4facfe 0%, #00c6fb 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'
@@ -164,7 +164,7 @@ export default function PrommuniProtected() {
                     backgroundColor: isSubmitting ? '#f7fafc' : 'white'
                   }}
                   onFocus={(e) => {
-                    if (!error) e.currentTarget.style.borderColor = '#43e97b';
+                    if (!error) e.currentTarget.style.borderColor = '#4facfe';
                   }}
                   onBlur={(e) => {
                     if (!error) e.currentTarget.style.borderColor = '#e2e8f0';
@@ -190,7 +190,7 @@ export default function PrommuniProtected() {
                   padding: '1rem 2rem',
                   background: isSubmitting 
                     ? '#ccc' 
-                    : 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+                    : 'linear-gradient(135deg, #4facfe 0%, #00c6fb 100%)',
                   color: 'white',
                   border: 'none',
                   borderRadius: '12px',
@@ -206,7 +206,7 @@ export default function PrommuniProtected() {
                 onMouseEnter={(e) => {
                   if (!isSubmitting) {
                     e.currentTarget.style.transform = 'translateY(-2px)';
-                    e.currentTarget.style.boxShadow = '0 8px 25px rgba(67, 233, 123, 0.3)';
+                    e.currentTarget.style.boxShadow = '0 8px 25px rgba(79, 172, 254, 0.3)';
                   }
                 }}
                 onMouseLeave={(e) => {
@@ -260,7 +260,7 @@ export default function PrommuniProtected() {
             <Link 
               href="/projects"
               style={{
-                color: '#43e97b',
+                color: '#4facfe',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 fontWeight: '500'

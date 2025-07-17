@@ -51,8 +51,8 @@ export default function SellMaxProject() {
             <div style={{
               display: 'inline-block',
               padding: '0.5rem 1.5rem',
-              background: 'rgba(79, 172, 254, 0.1)',
-              color: '#4facfe',
+              background: 'rgba(34, 197, 94, 0.1)',
+              color: '#43e97b',
               borderRadius: '50px',
               marginBottom: '1.5rem',
               fontSize: '0.9rem',
@@ -66,7 +66,7 @@ export default function SellMaxProject() {
               fontWeight: '700',
               lineHeight: '1.1',
               marginBottom: '1.5rem',
-              background: 'linear-gradient(135deg, #4facfe 0%, #00c6fb 100%)',
+              background: 'linear-gradient(135deg, #43e97b 0%, #059669 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'
@@ -127,12 +127,12 @@ export default function SellMaxProject() {
                   key={index}
                   style={{
                     padding: '0.5rem 1.25rem',
-                    background: 'rgba(79, 172, 254, 0.1)',
-                    color: '#4facfe',
+                    background: 'rgba(34, 197, 94, 0.1)',
+                    color: '#43e97b',
                     borderRadius: '25px',
                     fontSize: '0.9rem',
                     fontWeight: '500',
-                    border: '1px solid rgba(79, 172, 254, 0.2)'
+                    border: '1px solid rgba(34, 197, 94, 0.2)'
                   }}
                 >
                   {skill}
@@ -151,12 +151,12 @@ export default function SellMaxProject() {
               width: '100%',
               maxWidth: '500px',
               height: '400px',
-              background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 198, 251, 0.05))',
+              background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
               borderRadius: '30px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 20px 60px rgba(79, 172, 254, 0.2)',
+              boxShadow: '0 20px 60px rgba(34, 197, 94, 0.2)',
               position: 'relative',
               overflow: 'hidden'
             }}>
@@ -184,7 +184,7 @@ export default function SellMaxProject() {
             {/* The Challenge */}
             <section style={{ marginBottom: '5rem' }}>
               <div style={{
-                background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 198, 251, 0.02))',
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px',
                 marginBottom: '3rem'
@@ -200,7 +200,7 @@ export default function SellMaxProject() {
                 <p style={{
                   fontSize: '1.4rem',
                   lineHeight: '1.6',
-                  color: '#4facfe',
+                  color: '#43e97b',
                   fontWeight: '600',
                   margin: 0
                 }}>
@@ -266,7 +266,7 @@ export default function SellMaxProject() {
                     <div style={{
                       width: '100%',
                       height: '200px',
-                      background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 198, 251, 0.05))',
+                      background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
                       borderRadius: '12px',
                       display: 'flex',
                       alignItems: 'center',
@@ -298,10 +298,10 @@ export default function SellMaxProject() {
                   'The project focused on identifying and solving conversion barriers'
                 ].map((point, index) => (
                   <div key={index} style={{
-                    background: 'rgba(79, 172, 254, 0.05)',
+                    background: 'rgba(34, 197, 94, 0.05)',
                     padding: '1.5rem',
                     borderRadius: '16px',
-                    borderLeft: '4px solid #4facfe'
+                    borderLeft: '4px solid #43e97b'
                   }}>
                     <p style={{
                       fontSize: '1.1rem',
@@ -350,10 +350,10 @@ export default function SellMaxProject() {
                   "I kind of wish I could've got through it faster, but maybe that's just me being lazy."
                 ].map((feedback, index) => (
                   <div key={index} style={{
-                    background: 'rgba(79, 172, 254, 0.05)',
+                    background: 'rgba(34, 197, 94, 0.05)',
                     padding: '1.5rem',
                     borderRadius: '16px',
-                    borderLeft: '4px solid #4facfe'
+                    borderLeft: '4px solid #43e97b'
                   }}>
                     <p style={{
                       fontSize: '1rem',
@@ -370,7 +370,7 @@ export default function SellMaxProject() {
 
               {/* Research Takeaways */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 198, 251, 0.02))',
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
                 padding: '2rem',
                 borderRadius: '20px'
               }}>
@@ -404,7 +404,7 @@ export default function SellMaxProject() {
                       marginBottom: '1rem'
                     }}>
                       <span style={{
-                        color: '#4facfe',
+                        color: '#43e97b',
                         fontSize: '1.2rem',
                         fontWeight: '700',
                         minWidth: '20px'
@@ -477,7 +477,7 @@ export default function SellMaxProject() {
                 </div>
                 <div style={{
                   height: '300px',
-                  background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 198, 251, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
                   borderRadius: '16px',
                   display: 'flex',
                   alignItems: 'center',
@@ -510,7 +510,7 @@ export default function SellMaxProject() {
               }}>
                 <div style={{
                   height: '300px',
-                  background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 198, 251, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
                   borderRadius: '16px',
                   display: 'flex',
                   alignItems: 'center',
@@ -587,7 +587,7 @@ export default function SellMaxProject() {
                   ].map((image, index) => (
                     <div key={index} style={{
                       height: '200px',
-                      background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 198, 251, 0.05))',
+                      background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
                       borderRadius: '12px',
                       display: 'flex',
                       alignItems: 'center',
@@ -622,7 +622,7 @@ export default function SellMaxProject() {
               
               {/* Setup */}
               <div style={{
-                background: 'rgba(79, 172, 254, 0.05)',
+                background: 'rgba(34, 197, 94, 0.05)',
                 padding: '2rem',
                 borderRadius: '20px',
                 marginBottom: '3rem'
@@ -640,7 +640,7 @@ export default function SellMaxProject() {
                     <h4 style={{
                       fontSize: '1.1rem',
                       fontWeight: '600',
-                      color: '#4facfe',
+                      color: '#43e97b',
                       marginBottom: '0.5rem'
                     }}>
                       Google Analytics 4
@@ -657,7 +657,7 @@ export default function SellMaxProject() {
                     <h4 style={{
                       fontSize: '1.1rem',
                       fontWeight: '600',
-                      color: '#4facfe',
+                      color: '#43e97b',
                       marginBottom: '0.5rem'
                     }}>
                       Hotjar
@@ -675,7 +675,7 @@ export default function SellMaxProject() {
 
               {/* Results */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 198, 251, 0.02))',
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px',
                 marginBottom: '3rem'
@@ -727,7 +727,7 @@ export default function SellMaxProject() {
                       <p style={{
                         fontSize: '1.3rem',
                         fontWeight: '700',
-                        color: '#4facfe',
+                        color: '#43e97b',
                         margin: 0
                       }}>
                         {stat.result}
@@ -773,7 +773,7 @@ export default function SellMaxProject() {
                 Takeaways & Impact
               </h2>
               <div style={{
-                background: 'linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 198, 251, 0.02))',
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
                 padding: '2rem',
                 borderRadius: '20px'
               }}>
@@ -806,7 +806,7 @@ export default function SellMaxProject() {
                       color: 'var(--text-secondary)'
                     }}>
                       <span style={{
-                        color: '#4facfe',
+                        color: '#43e97b',
                         fontSize: '1.2rem',
                         fontWeight: '700',
                         minWidth: '20px'

@@ -14,7 +14,7 @@ const projects = [
     description: 'An AI-powered web application that eliminates the daily mental overhead of macro tracking by automatically generating personalized meal plans',
     image: '/images/MacroMealCoverMockup.png',
     tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
-    color: '#22c55e'
+    color: '#f97316'
   },
   {
     id: 'prommuni',
@@ -23,7 +23,7 @@ const projects = [
     description: 'A service for young professionals to find roommates and leases with similar minded people',
     image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
-    color: '#43e97b'
+    color: '#4facfe'
   },
   {
     id: 'att',
@@ -41,7 +41,7 @@ const projects = [
     description: 'Redesigning a car quote questionnaire to reduce user abandonment and improve conversion rates',
     image: '/images/SellMaxCoverMockup.png',
     tags: ['Conversion Optimization', 'Web Design', 'UX Research', 'Figma'],
-    color: '#4facfe'
+    color: '#22c55e'
   }
 ];
 

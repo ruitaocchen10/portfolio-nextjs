@@ -51,8 +51,8 @@ export default function MacroMealProject() {
             <div style={{
               display: 'inline-block',
               padding: '0.5rem 1.5rem',
-              background: 'rgba(34, 197, 94, 0.1)',
-              color: '#22c55e',
+              background: 'rgba(249, 115, 22, 0.1)',
+              color: '#f97316',
               borderRadius: '50px',
               marginBottom: '1.5rem',
               fontSize: '0.9rem',
@@ -66,7 +66,7 @@ export default function MacroMealProject() {
               fontWeight: '700',
               lineHeight: '1.1',
               marginBottom: '1.5rem',
-              background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+              background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'
@@ -127,8 +127,8 @@ export default function MacroMealProject() {
                   key={index}
                   style={{
                     padding: '0.5rem 1.25rem',
-                    background: 'rgba(34, 197, 94, 0.1)',
-                    color: '#22c55e',
+                    background: 'rgba(249, 115, 22, 0.1)',
+                    color: '#f97316',
                     borderRadius: '25px',
                     fontSize: '0.9rem',
                     fontWeight: '500',
@@ -151,12 +151,12 @@ export default function MacroMealProject() {
               width: '100%',
               maxWidth: '500px',
               height: '400px',
-              background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05))',
+              background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(249, 115, 22, 0.05))',
               borderRadius: '30px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 20px 60px rgba(34, 197, 94, 0.2)',
+              boxShadow: '0 20px 60px rgba(249, 115, 22, 0.1)',
               position: 'relative',
               overflow: 'hidden'
             }}>
@@ -178,8 +178,8 @@ export default function MacroMealProject() {
                 {/* Try It Yourself Section */}
                 <section style={{
           padding: '4rem 3rem',
-          background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
-          borderBottom: '1px solid rgba(34, 197, 94, 0.1)'
+          background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
+          borderBottom: '1px solid rgba(249, 115, 22, 0.1)'
         }}>
           <div style={{
             maxWidth: '1200px',
@@ -189,8 +189,8 @@ export default function MacroMealProject() {
             <div style={{
               display: 'inline-block',
               padding: '0.5rem 1.5rem',
-              background: 'rgba(34, 197, 94, 0.1)',
-              color: '#22c55e',
+              background: 'rgba(249, 115, 22, 0.1)',
+              color: '#f97316',
               borderRadius: '50px',
               marginBottom: '1.5rem',
               fontSize: '0.9rem',
@@ -235,23 +235,23 @@ export default function MacroMealProject() {
                   alignItems: 'center',
                   gap: '0.75rem',
                   padding: '1.25rem 2.5rem',
-                  background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                  background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
                   color: 'white',
                   textDecoration: 'none',
                   fontWeight: '600',
                   fontSize: '1.1rem',
                   borderRadius: '50px',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  boxShadow: '0 8px 30px rgba(34, 197, 94, 0.3)',
+                  boxShadow: '0 8px 30px rgba(249, 115, 22, 0.3)',
                   cursor: 'pointer'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-3px) scale(1.02)';
-                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(34, 197, 94, 0.4)';
+                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(249, 115, 22, 0.4)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(34, 197, 94, 0.3)';
+                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(249, 115, 22, 0.3)';
                 }}
               >
                 <span style={{ fontSize: '1.3rem' }}>🍽️</span>
@@ -283,7 +283,7 @@ export default function MacroMealProject() {
             {/* Problem Statement */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px',
                 marginBottom: '3rem'
@@ -291,7 +291,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -340,7 +340,7 @@ export default function MacroMealProject() {
 
               {/* Market Opportunity */}
               <div style={{
-                background: 'rgba(34, 197, 94, 0.05)',
+                background: 'rgba(249, 115, 22, 0.05)',
                 padding: '2rem',
                 borderRadius: '20px',
                 textAlign: 'center'
@@ -371,7 +371,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -400,7 +400,7 @@ export default function MacroMealProject() {
                   borderRadius: '20px',
                   padding: '2.5rem',
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(34, 197, 94, 0.1)'
+                  border: '1px solid rgba(249, 115, 22, 0.1)'
                 }}>
                   <div style={{
                     fontSize: '3rem',
@@ -417,14 +417,14 @@ export default function MacroMealProject() {
                     "Committed Connor" - Fitness Enthusiast
                   </h3>
                   <div style={{ marginBottom: '1rem' }}>
-                    <strong style={{ color: '#22c55e' }}>Goals:</strong> Build muscle, track macros precisely
+                    <strong style={{ color: '#f97316' }}>Goals:</strong> Build muscle, track macros precisely
                   </div>
                   <div style={{ marginBottom: '1rem' }}>
-                    <strong style={{ color: '#22c55e' }}>Pain Points:</strong> Spends too much time meal planning, gets bored with same foods
+                    <strong style={{ color: '#f97316' }}>Pain Points:</strong> Spends too much time meal planning, gets bored with same foods
                   </div>
                   <div style={{
                     padding: '1rem',
-                    background: 'rgba(34, 197, 94, 0.05)',
+                    background: 'rgba(249, 115, 22, 0.05)',
                     borderRadius: '12px',
                     fontStyle: 'italic',
                     color: 'var(--text-secondary)'
@@ -438,7 +438,7 @@ export default function MacroMealProject() {
                   borderRadius: '20px',
                   padding: '2.5rem',
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(34, 197, 94, 0.1)'
+                  border: '1px solid rgba(249, 115, 22, 0.1)'
                 }}>
                   <div style={{
                     fontSize: '3rem',
@@ -455,14 +455,14 @@ export default function MacroMealProject() {
                     "Busy Brenda" - Health-Conscious Professional
                   </h3>
                   <div style={{ marginBottom: '1rem' }}>
-                    <strong style={{ color: '#22c55e' }}>Goals:</strong> Maintain weight, eat healthily with minimal effort
+                    <strong style={{ color: '#f97316' }}>Goals:</strong> Maintain weight, eat healthily with minimal effort
                   </div>
                   <div style={{ marginBottom: '1rem' }}>
-                    <strong style={{ color: '#22c55e' }}>Pain Points:</strong> No time for complex meal planning, needs quick solutions
+                    <strong style={{ color: '#f97316' }}>Pain Points:</strong> No time for complex meal planning, needs quick solutions
                   </div>
                   <div style={{
                     padding: '1rem',
-                    background: 'rgba(34, 197, 94, 0.05)',
+                    background: 'rgba(249, 115, 22, 0.05)',
                     borderRadius: '12px',
                     fontStyle: 'italic',
                     color: 'var(--text-secondary)'
@@ -511,8 +511,8 @@ export default function MacroMealProject() {
                     }}>
                       <div style={{
                         padding: '0.5rem 1rem',
-                        background: index < 6 ? 'rgba(239, 68, 68, 0.1)' : 'rgba(34, 197, 94, 0.1)',
-                        color: index < 6 ? '#ef4444' : '#22c55e',
+                        background: index < 6 ? 'rgba(239, 68, 68, 0.1)' : 'rgba(249, 115, 22, 0.1)',
+                        color: index < 6 ? '#ef4444' : '#f97316',
                         borderRadius: '20px',
                         fontSize: '0.9rem',
                         fontWeight: '500'
@@ -543,7 +543,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -596,7 +596,7 @@ export default function MacroMealProject() {
                     borderRadius: '16px',
                     padding: '1.5rem',
                     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                    border: '1px solid rgba(34, 197, 94, 0.1)'
+                    border: '1px solid rgba(249, 115, 22, 0.1)'
                   }}>
                     <h3 style={{
                       fontSize: '1.2rem',
@@ -608,7 +608,7 @@ export default function MacroMealProject() {
                     </h3>
                     
                     <div style={{ marginBottom: '1rem' }}>
-                      <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: '#22c55e', marginBottom: '0.5rem' }}>
+                      <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: '#f97316', marginBottom: '0.5rem' }}>
                         Strengths
                       </h4>
                       <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -651,10 +651,10 @@ export default function MacroMealProject() {
 
                     <div style={{
                       padding: '1rem',
-                      background: 'rgba(34, 197, 94, 0.05)',
+                      background: 'rgba(249, 115, 22, 0.05)',
                       borderRadius: '12px'
                     }}>
-                      <strong style={{ color: '#22c55e', fontSize: '0.9rem' }}>Key Gap:</strong>
+                      <strong style={{ color: '#f97316', fontSize: '0.9rem' }}>Key Gap:</strong>
                       <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: '0.25rem 0 0 0' }}>
                         {competitor.gap}
                       </p>
@@ -670,7 +670,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -689,7 +689,7 @@ export default function MacroMealProject() {
 
               {/* Strategic Decision: AI-First */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px'
               }}>
@@ -743,7 +743,7 @@ export default function MacroMealProject() {
                       fontSize: '1.2rem',
                       fontWeight: '600',
                       marginBottom: '1rem',
-                      color: '#22c55e'
+                      color: '#f97316'
                     }}>
                       AI-First Solution Benefits:
                     </h4>
@@ -762,7 +762,7 @@ export default function MacroMealProject() {
                           alignItems: 'center',
                           gap: '0.5rem'
                         }}>
-                          <span style={{ color: '#22c55e', fontSize: '1.2rem' }}>✓</span>
+                          <span style={{ color: '#f97316', fontSize: '1.2rem' }}>✓</span>
                           {benefit}
                         </li>
                       ))}
@@ -793,12 +793,12 @@ export default function MacroMealProject() {
                     <div style={{ fontWeight: '600', color: 'var(--primary-dark)' }}>Criteria</div>
                     <div style={{ fontWeight: '600', color: 'var(--primary-dark)' }}>Database</div>
                     <div style={{ fontWeight: '600', color: 'var(--primary-dark)' }}>Recipes</div>
-                    <div style={{ fontWeight: '600', color: '#22c55e' }}>AI Generation</div>
+                    <div style={{ fontWeight: '600', color: '#f97316' }}>AI Generation</div>
                     
                     <div>Variety</div>
                     <div>⭐⭐</div>
                     <div>⭐⭐⭐</div>
-                    <div style={{ color: '#22c55e', fontWeight: '600' }}>⭐⭐⭐⭐⭐</div>
+                    <div style={{ color: '#f97316', fontWeight: '600' }}>⭐⭐⭐⭐⭐</div>
                     
                     <div>Accuracy</div>
                     <div>⭐⭐⭐⭐⭐</div>
@@ -808,7 +808,7 @@ export default function MacroMealProject() {
                     <div>Personalization</div>
                     <div>⭐⭐</div>
                     <div>⭐⭐⭐</div>
-                    <div style={{ color: '#22c55e', fontWeight: '600' }}>⭐⭐⭐⭐⭐</div>
+                    <div style={{ color: '#f97316', fontWeight: '600' }}>⭐⭐⭐⭐⭐</div>
                     
                     <div>Development Speed</div>
                     <div>⭐⭐⭐⭐⭐</div>
@@ -830,7 +830,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -875,7 +875,7 @@ export default function MacroMealProject() {
                       fontSize: '1.1rem',
                       fontWeight: '600',
                       marginBottom: '1rem',
-                      color: '#22c55e'
+                      color: '#f97316'
                     }}>
                       Must-Have (P0)
                     </h4>
@@ -894,7 +894,7 @@ export default function MacroMealProject() {
                           alignItems: 'center',
                           gap: '0.5rem'
                         }}>
-                          <span style={{ color: '#22c55e' }}>●</span>
+                          <span style={{ color: '#f97316' }}>●</span>
                           {feature}
                         </li>
                       ))}
@@ -972,7 +972,7 @@ export default function MacroMealProject() {
                 gap: '3rem'
               }}>
                 <div style={{
-                  background: 'rgba(34, 197, 94, 0.05)',
+                  background: 'rgba(249, 115, 22, 0.05)',
                   padding: '2rem',
                   borderRadius: '20px'
                 }}>
@@ -996,7 +996,7 @@ export default function MacroMealProject() {
                         marginBottom: '1rem',
                         fontStyle: 'italic',
                         paddingLeft: '1rem',
-                        borderLeft: '3px solid #22c55e'
+                        borderLeft: '3px solid #f97316'
                       }}>
                         {feedback}
                       </li>
@@ -1039,7 +1039,7 @@ export default function MacroMealProject() {
 
               {/* Key Learnings */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '2rem',
                 borderRadius: '20px',
                 marginTop: '3rem'
@@ -1073,7 +1073,7 @@ export default function MacroMealProject() {
                       color: 'var(--text-secondary)'
                     }}>
                       <span style={{
-                        color: '#22c55e',
+                        color: '#f97316',
                         fontSize: '1.2rem',
                         fontWeight: '700',
                         minWidth: '20px'
@@ -1093,7 +1093,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -1112,7 +1112,7 @@ export default function MacroMealProject() {
               
               {/* AI Implementation Strategy */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px'
               }}>
@@ -1173,7 +1173,7 @@ export default function MacroMealProject() {
                         position: 'absolute',
                         top: '-12px',
                         left: '1rem',
-                        background: phase.status === 'Completed' ? '#22c55e' : phase.status === 'In Progress' ? '#f59e0b' : '#6b7280',
+                        background: phase.status === 'Completed' ? '#f97316' : phase.status === 'In Progress' ? '#f59e0b' : '#6b7280',
                         color: 'white',
                         padding: '0.5rem 1rem',
                         borderRadius: '20px',
@@ -1186,7 +1186,7 @@ export default function MacroMealProject() {
                       <h4 style={{
                         fontSize: '1rem',
                         fontWeight: '600',
-                        color: '#22c55e',
+                        color: '#f97316',
                         marginBottom: '0.5rem',
                         marginTop: '1rem'
                       }}>
@@ -1212,7 +1212,7 @@ export default function MacroMealProject() {
                             alignItems: 'center',
                             gap: '0.5rem'
                           }}>
-                            <span style={{ color: '#22c55e' }}>▶</span>
+                            <span style={{ color: '#f97316' }}>▶</span>
                             {feature}
                           </li>
                         ))}
@@ -1228,7 +1228,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -1346,7 +1346,7 @@ export default function MacroMealProject() {
                       <h4 style={{
                         fontSize: '1rem',
                         fontWeight: '600',
-                        color: '#22c55e',
+                        color: '#f97316',
                         marginBottom: '0.5rem'
                       }}>
                         Solution:
@@ -1391,7 +1391,7 @@ export default function MacroMealProject() {
 
               {/* Technical Implementation Details */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px'
               }}>
@@ -1438,7 +1438,7 @@ export default function MacroMealProject() {
                           alignItems: 'center',
                           gap: '0.5rem'
                         }}>
-                          <span style={{ color: '#22c55e' }}>▶</span>
+                          <span style={{ color: '#f97316' }}>▶</span>
                           {detail}
                         </li>
                       ))}
@@ -1473,7 +1473,7 @@ export default function MacroMealProject() {
                           alignItems: 'center',
                           gap: '0.5rem'
                         }}>
-                          <span style={{ color: '#22c55e' }}>▶</span>
+                          <span style={{ color: '#f97316' }}>▶</span>
                           {detail}
                         </li>
                       ))}
@@ -1508,7 +1508,7 @@ export default function MacroMealProject() {
                           alignItems: 'center',
                           gap: '0.5rem'
                         }}>
-                          <span style={{ color: '#22c55e' }}>▶</span>
+                          <span style={{ color: '#f97316' }}>▶</span>
                           {detail}
                         </li>
                       ))}
@@ -1524,7 +1524,7 @@ export default function MacroMealProject() {
                 <p style={{
                   fontSize: '1rem',
                   fontWeight: '600',
-                  color: '#22c55e',
+                  color: '#f97316',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
@@ -1580,7 +1580,7 @@ export default function MacroMealProject() {
                     padding: '2rem',
                     textAlign: 'center',
                     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                    border: '1px solid rgba(34, 197, 94, 0.1)',
+                    border: '1px solid rgba(249, 115, 22, 0.1)',
                     transition: 'transform 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -1615,8 +1615,8 @@ export default function MacroMealProject() {
                     <div style={{
                       display: 'inline-block',
                       padding: '0.5rem 1rem',
-                      background: 'rgba(34, 197, 94, 0.1)',
-                      color: '#22c55e',
+                      background: 'rgba(249, 115, 22, 0.1)',
+                      color: '#f97316',
                       borderRadius: '20px',
                       fontSize: '0.9rem',
                       fontWeight: '600'
@@ -1629,7 +1629,7 @@ export default function MacroMealProject() {
 
               {/* Future Roadmap */}
               <div style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(234, 88, 12, 0.02))',
                 padding: '3rem',
                 borderRadius: '24px',
                 textAlign: 'center'
@@ -1657,7 +1657,7 @@ export default function MacroMealProject() {
                   display: 'inline-block',
                   padding: '0.75rem 2rem',
                   background: 'rgba(34, 197, 94, 0.2)',
-                  color: '#16a34a',
+                  color: '#ea580c',
                   borderRadius: '50px',
                   fontSize: '1rem',
                   fontWeight: '600'
