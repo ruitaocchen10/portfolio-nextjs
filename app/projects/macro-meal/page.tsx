@@ -664,6 +664,120 @@ export default function MacroMealProject() {
               </div>
             </section>
 
+            {/* Key Takeaways from Research & Competitive Analysis */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.02))',
+                padding: '3rem',
+                borderRadius: '20px'
+              }}>
+                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                  <p style={{
+                    fontSize: '1rem',
+                    fontWeight: '600',
+                    color: '#22c55e',
+                    marginBottom: '1rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.1em'
+                  }}>
+                    KEY TAKEAWAYS
+                  </p>
+                  <h2 style={{
+                    fontSize: '2.5rem',
+                    fontWeight: '700',
+                    marginBottom: '1rem',
+                    color: 'var(--primary-dark)'
+                  }}>
+                    Research & Competitive insights
+                  </h2>
+                  <p style={{
+                    fontSize: '1.1rem',
+                    lineHeight: '1.6',
+                    color: 'var(--text-secondary)',
+                    maxWidth: '600px',
+                    margin: '0 auto'
+                  }}>
+                    What I learned from user research and competitive analysis that informed our design approach
+                  </p>
+                </div>
+
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                  gap: '1rem'
+                }}>
+                  {[
+                    {
+                      title: 'Clear Market Gap in Automation',
+                      insight: 'No existing tool truly eliminates meal planning decisions'
+                    },
+                    {
+                      title: 'Users Want Control Within Automation',
+                      insight: 'Both personas want AI to do the heavy lifting but need easy ways to customize and swap meals they don\'t like'
+                    },
+                    {
+                      title: 'Time is the Primary Pain Driver',
+                      insight: 'Users spend 15-30 minutes daily on meal planning, which creates the strongest motivation to seek an automated solution'
+                    },
+                    {
+                      title: 'Trust Must Be Earned Through Accuracy',
+                      insight: 'Competitive analysis shows users don\'t trust AI-generated nutrition advice'
+                    },
+                    {
+                      title: 'Context Awareness is Critical',
+                      insight: 'Existing tools fail to consider real-life factors like training days, leftovers, dietary restrictions, and cooking skill level'
+                    },
+                    {
+                      title: 'Accuracy vs Usability Trade-off',
+                      insight: 'Current tools sacrifice UX for precision (Cronometer) or precision for usability (MyFitnessPal)'
+                    }
+                  ].map((takeaway, index) => (
+                    <div key={index} style={{
+                      background: 'white',
+                      padding: '2rem',
+                      borderRadius: '16px',
+                      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+                      border: '1px solid rgba(34, 197, 94, 0.1)'
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '1rem',
+                        marginBottom: '1rem'
+                      }}>
+                        <span style={{
+                          color: '#22c55e',
+                          fontSize: '1.5rem',
+                          fontWeight: '700',
+                          minWidth: '24px'
+                        }}>
+                          💡
+                        </span>
+                        <h3 style={{
+                          fontSize: '1.1rem',
+                          fontWeight: '700',
+                          color: 'var(--primary-dark)',
+                          margin: 0,
+                          lineHeight: '1.4'
+                        }}>
+                          {takeaway.title}
+                        </h3>
+                      </div>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        lineHeight: '1.6',
+                        color: 'var(--text-secondary)',
+                        margin: 0,
+                        paddingLeft: '2.5rem'
+                      }}>
+                        {takeaway.insight}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
             {/* Design Process & Ideation */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
@@ -1566,12 +1680,6 @@ export default function MacroMealProject() {
                     title: 'Infinite Variety',
                     description: 'Never repeat the same meal combination with AI-generated options',
                     metric: 'Unlimited combinations'
-                  },
-                  {
-                    icon: '🧠',
-                    title: 'Zero Mental Overhead',
-                    description: 'Effortless meal planning that adapts to user preferences and constraints',
-                    metric: 'Truly automated'
                   }
                 ].map((achievement, index) => (
                   <div key={index} style={{

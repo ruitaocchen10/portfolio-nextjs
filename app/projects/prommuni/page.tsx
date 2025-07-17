@@ -248,7 +248,7 @@ export default function PrommuniProtected() {
                 </div>
                 <div>
                   <strong style={{ color: 'var(--primary-dark)' }}>Duration:</strong>
-                  <div style={{ color: 'var(--text-secondary)' }}>January 2025 - Present</div>
+                  <div style={{ color: 'var(--text-secondary)' }}>November 2024 - Present</div>
                 </div>
                 <div>
                   <strong style={{ color: 'var(--primary-dark)' }}>Status:</strong>

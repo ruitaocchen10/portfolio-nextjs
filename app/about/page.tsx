@@ -58,7 +58,7 @@ export default function About() {
                 color: 'var(--text-secondary)',
                 marginBottom: '2rem'
               }}>
-                A passionate UX/UI designer who believes that great design is not just about making things look beautiful—it's about solving real problems and creating meaningful experiences that connect with people.
+                The possibilities of creation are greater than ever before. More tools than ever before are allowing people to create faster and more effective solutions to their problems and needs. I'm implementing all the tools I have at my disposal to create solutions in fitness, cooking, sports, music, and other industries that I am passionate about. 
               </p>
 
               <div style={{
@@ -297,97 +297,6 @@ export default function About() {
                 ))}
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Values Section */}
-        <section style={{
-          padding: '4rem 3rem',
-          maxWidth: '1400px',
-          margin: '0 auto'
-        }}>
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <h2 style={{
-              fontSize: '2.5rem',
-              fontWeight: '700',
-              marginBottom: '1rem',
-              color: 'var(--primary-dark)'
-            }}>
-              What Drives Me
-            </h2>
-            <p style={{
-              fontSize: '1.2rem',
-              color: 'var(--text-secondary)',
-              maxWidth: '600px',
-              margin: '0 auto'
-            }}>
-              The principles that guide my design philosophy and approach to every project.
-            </p>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '2rem'
-          }}>
-            {[
-              {
-                icon: '🎯',
-                title: 'User-Centered',
-                description: 'Every design decision starts with understanding user needs, pain points, and motivations.'
-              },
-              {
-                icon: '🔄',
-                title: 'Iterative Process',
-                description: 'Great design emerges through continuous testing, learning, and refinement.'
-              },
-              {
-                icon: '💡',
-                title: 'Problem Solving',
-                description: 'Design is not just about aesthetics—it\'s about finding elegant solutions to complex challenges.'
-              }
-            ].map((value, index) => (
-              <div 
-                key={index}
-                style={{
-                  background: 'white',
-                  padding: '2.5rem',
-                  borderRadius: '24px',
-                  textAlign: 'center',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  transition: 'transform 0.3s ease',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-8px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={{
-                  fontSize: '3rem',
-                  marginBottom: '1rem'
-                }}>
-                  {value.icon}
-                </div>
-                <h3 style={{
-                  fontSize: '1.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  {value.title}
-                </h3>
-                <p style={{
-                  fontSize: '1rem',
-                  lineHeight: '1.6',
-                  color: 'var(--text-secondary)'
-                }}>
-                  {value.description}
-                </p>
-              </div>
-            ))}
           </div>
         </section>
 
