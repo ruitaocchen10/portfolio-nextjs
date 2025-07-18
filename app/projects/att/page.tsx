@@ -83,94 +83,64 @@ export default function ATTProject() {
               Mobile app redesign focused on adding features to a gym app to improve member retention and engagement for one of the world's most respected MMA gyms.
             </p>
 
-            {/* Project Details */}
             <div style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr 1fr',
+              display: 'flex',
+              flexWrap: 'wrap',
               gap: '2rem',
               marginBottom: '2rem'
             }}>
               <div>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  ROLE
-                </h4>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  UI/UX Designer
-                </p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', marginBottom: '0.5rem' }}>ROLE</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-primary)' }}>UI/UX Designer</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  TIMELINE
-                </h4>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  July - November 2024
-                </p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', marginBottom: '0.5rem' }}>YEAR</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-primary)' }}>2024</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  TOOLS
-                </h4>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-dark)', margin: 0 }}>
-                  Figma
-                </p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', marginBottom: '0.5rem' }}>TEAM</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-primary)' }}>Solo Project</p>
               </div>
             </div>
 
-            {/* Skills Used */}
             <div style={{
               display: 'flex',
               flexWrap: 'wrap',
               gap: '0.75rem'
             }}>
-              {['User Interviews', 'Mobile Design', 'Prototyping', 'User Flow', 'User Testing'].map((skill, index) => (
-                <span 
-                  key={index}
-                  style={{
-                    padding: '0.5rem 1.25rem',
-                    background: 'rgba(240, 147, 251, 0.1)',
-                    color: '#f093fb',
-                    borderRadius: '25px',
-                    fontSize: '0.9rem',
-                    fontWeight: '500',
-                    border: '1px solid rgba(240, 147, 251, 0.2)'
-                  }}
-                >
+              {['User Interviews', 'Mobile Design', 'Prototyping', 'User Flow', 'User Testing'].map((skill) => (
+                <span key={skill} style={{
+                  padding: '0.5rem 1rem',
+                  background: 'rgba(240, 147, 251, 0.1)',
+                  color: '#f093fb',
+                  borderRadius: '20px',
+                  fontSize: '0.85rem',
+                  fontWeight: '500'
+                }}>
                   {skill}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Right - Cover Image */}
+          {/* Right - Hero Image */}
           <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            height: '500px',
+            background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+            borderRadius: '24px',
+            position: 'relative',
+            overflow: 'hidden'
           }}>
-            <div style={{
-              width: '100%',
-              maxWidth: '500px',
-              height: '400px',
-              background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
-              borderRadius: '30px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 20px 60px rgba(240, 147, 251, 0.2)',
-              position: 'relative',
-              overflow: 'hidden'
-            }}>
-              <Image
-                src="/images/ATTCoverMockup.png"
-                alt="ATT Project Cover"
-                fill
-                style={{
-                  objectFit: 'contain',
-                  borderRadius: '30px'
-                }}
-                priority
-              />
-            </div>
+            <Image
+              src="/images/ATTCoverMockup.png"
+              alt="ATT Mobile App Design"
+              fill
+              style={{
+                objectFit: 'contain',
+                borderRadius: '24px'
+              }}
+              priority
+            />
           </div>
         </section>
 
@@ -181,13 +151,13 @@ export default function ATTProject() {
         }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             
-            {/* About ATT */}
+            {/* Project Overview */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: '1fr 2fr',
                 gap: '4rem',
-                alignItems: 'center'
+                alignItems: 'start'
               }}>
                 <div>
                   <p style={{
@@ -198,7 +168,7 @@ export default function ATTProject() {
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em'
                   }}>
-                    About American Top Team
+                    Project Overview
                   </p>
                   <h2 style={{
                     fontSize: '2.5rem',
@@ -207,89 +177,35 @@ export default function ATTProject() {
                     color: 'var(--primary-dark)',
                     marginBottom: '1.5rem'
                   }}>
-                    American Top Team (ATT) is one of the most respected and successful mixed martial arts (MMA) gyms in the world. ATT has a large network of gyms primary in the southern USA.
+                    The Challenge
                   </h2>
                 </div>
-                <div style={{
-                  height: '300px',
-                  background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
-                  borderRadius: '20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  position: 'relative'
-                }}>
-                  <Image
-                    src="/images/ATT.png"
-                    alt="ATT Logo"
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      padding: '3rem'
-                    }}
-                  />
+                <div>
+                  <p style={{
+                    fontSize: '1.1rem',
+                    lineHeight: '1.7',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '2rem'
+                  }}>
+                    <strong>American Top Team (ATT)</strong> is one of the most respected mixed martial arts (MMA) gyms in the world, with a large network of locations primarily in the southern USA. As their membership base grew, they were struggling with outdated manual processes for managing members and communicating important information.
+                  </p>
+                  
+                  <div style={{
+                    background: '#f8f9fa',
+                    padding: '2rem',
+                    borderRadius: '16px',
+                    borderLeft: '4px solid #f093fb'
+                  }}>
+                    <h3 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '1rem', color: 'var(--primary-dark)' }}>
+                      Core Requirements
+                    </h3>
+                    <ul style={{ lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                      <li><strong>Member Management System:</strong> Track all gym members, monitor membership status, and enable staff to quickly access member details</li>
+                      <li><strong>Member Account Management:</strong> Allow new member sign-ups, profile management, self-service renewals, and handle different membership tiers</li>
+                      <li><strong>News & Communication Hub:</strong> Deliver gym news, announcements, and updates directly to members with push notifications</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </section>
-
-            {/* The Challenge */}
-            <section style={{ marginBottom: '6rem' }}>
-              <div style={{
-                background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
-                padding: '3rem',
-                borderRadius: '24px',
-                marginBottom: '3rem'
-              }}>
-                <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#f093fb',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  The Prompt
-                </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1.5rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  Update the current mobile app to add the following features to allow:
-                </h2>
-                <ul style={{
-                  listStyle: 'none',
-                  padding: 0,
-                  margin: 0,
-                  fontSize: '1.5rem',
-                  fontWeight: '400',
-                  lineHeight: '1.8',
-                  color: 'var(--text-secondary)'
-                }}>
-                  {[
-                    'Members to track their martial arts progression (belt, sparring notes, techniques).',
-                    'Members to post workouts, training logs, and class notes to share with coaches or friends.',
-                    'Encouragement for members to attend classes and maintain their memberships'
-                  ].map((item, index) => (
-                    <li key={index} style={{
-                      display: 'flex',
-                      alignItems: 'flex-start',
-                      gap: '1rem',
-                      marginBottom: '1rem'
-                    }}>
-                      <span style={{
-                        color: '#f093fb',
-                        fontSize: '1.3rem',
-                        fontWeight: '700',
-                        minWidth: '20px'
-                      }}>
-                        •
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </section>
 
@@ -304,7 +220,7 @@ export default function ATTProject() {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  USER RESEARCH
+                  User Research
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
@@ -312,45 +228,234 @@ export default function ATTProject() {
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
-                  I ran informal interviews with 7 members of the gym ranging from fighters, enthusiasts, coaches, and other staff members. Some of my main takeaways were:
+                  Understanding the Problem
                 </h2>
+                <p style={{
+                  fontSize: '1.1rem',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '600px',
+                  margin: '0 auto'
+                }}>
+                  I conducted comprehensive research using multiple methods to understand both business needs and user pain points before designing the solution.
+                </p>
               </div>
 
-              {/* Research Insights */}
               <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                gap: '1.5rem'
+                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                gap: '2rem',
+                marginBottom: '3rem'
               }}>
-                {[
-                  'Progress Tracking is Essential but Underdeveloped',
-                  'Class Scheduling Needs Real-Time Info',
-                  'Coaches Want Feedback Loops, Members Want More Coaching',
-                  'Social + Community Features Matter',
-                  'User Types Have Different Needs'
-                ].map((insight, index) => (
-                  <div key={index} style={{
-                    background: 'rgba(240, 147, 251, 0.05)',
-                    padding: '1.5rem',
-                    borderRadius: '16px',
-                    borderLeft: '4px solid #f093fb',
-                    textAlign: 'left'
+                {/* Stakeholder Interviews */}
+                <div style={{
+                  background: '#f8f9fa',
+                  padding: '2rem',
+                  borderRadius: '16px',
+                  border: '1px solid #e9ecef'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: 'var(--primary-dark)',
+                    marginBottom: '0.5rem'
                   }}>
-                    <p style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '400',
-                      color: 'var(--primary-dark)',
-                      margin: 0,
-                      lineHeight: '1.4'
+                    Stakeholder Interviews
+                  </h3>
+                  <p style={{
+                    fontSize: '0.9rem',
+                    color: '#f093fb',
+                    fontWeight: '600',
+                    marginBottom: '0.5rem'
+                  }}>
+                    8 participants
+                  </p>
+                  <p style={{
+                    fontSize: '1rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1.5rem',
+                    lineHeight: '1.5'
+                  }}>
+                    Gym managers, front desk staff, trainers, and admin coordinators
+                  </p>
+                  <ul style={{
+                    fontSize: '0.95rem',
+                    color: 'var(--text-secondary)',
+                    lineHeight: '1.6',
+                    paddingLeft: '1.5rem',
+                    listStyleType: 'disc'
+                  }}>
+                    <li style={{ marginBottom: '0.5rem' }}>Staff spending 3-4 hours daily on manual member tracking</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Peak hour bottlenecks with 2-3 minute check-in times</li>
+                    <li style={{ marginBottom: '0.5rem' }}>No centralized communication system across locations</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Member retention drops significantly after 3 months</li>
+                  </ul>
+                </div>
+
+                {/* Observational Research */}
+                <div style={{
+                  background: '#f8f9fa',
+                  padding: '2rem',
+                  borderRadius: '16px',
+                  border: '1px solid #e9ecef'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: 'var(--primary-dark)',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Observational Research
+                  </h3>
+                  <p style={{
+                    fontSize: '0.9rem',
+                    color: '#f093fb',
+                    fontWeight: '600',
+                    marginBottom: '0.5rem'
+                  }}>
+                    3 ATT locations
+                  </p>
+                  <p style={{
+                    fontSize: '1rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1.5rem',
+                    lineHeight: '1.5'
+                  }}>
+                    On-site observations during peak hours (morning, lunch, evening)
+                  </p>
+                  <ul style={{
+                    fontSize: '0.95rem',
+                    color: 'var(--text-secondary)',
+                    lineHeight: '1.6',
+                    paddingLeft: '1.5rem',
+                    listStyleType: 'disc'
+                  }}>
+                    <li style={{ marginBottom: '0.5rem' }}>15-20% of members couldn't remember membership status</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Important announcements frequently missed</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Front desk staff constantly interrupted by questions</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Members on phones while waiting - app opportunity</li>
+                  </ul>
+                </div>
+
+                {/* Competitive Analysis */}
+                <div style={{
+                  background: '#f8f9fa',
+                  padding: '2rem',
+                  borderRadius: '16px',
+                  border: '1px solid #e9ecef'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: 'var(--primary-dark)',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Competitive Analysis
+                  </h3>
+                  <p style={{
+                    fontSize: '0.9rem',
+                    color: '#f093fb',
+                    fontWeight: '600',
+                    marginBottom: '0.5rem'
+                  }}>
+                    12 fitness apps
+                  </p>
+                  <p style={{
+                    fontSize: '1rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1.5rem',
+                    lineHeight: '1.5'
+                  }}>
+                    Including UFC Gym, Planet Fitness, ClassPass, and Mindbody
+                  </p>
+                  <ul style={{
+                    fontSize: '0.95rem',
+                    color: 'var(--text-secondary)',
+                    lineHeight: '1.6',
+                    paddingLeft: '1.5rem',
+                    listStyleType: 'disc'
+                  }}>
+                    <li style={{ marginBottom: '0.5rem' }}>No apps designed for combat sports gyms</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Poor integration between member and business features</li>
+                    <li style={{ marginBottom: '0.5rem' }}>Complex onboarding processes (8-10 steps typical)</li>
+                    <li style={{ marginBottom: '0.5rem' }}>News/announcements treated as afterthoughts</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Primary Problems */}
+              <div style={{
+                background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                padding: '3rem',
+                borderRadius: '20px',
+                border: '1px solid rgba(240, 147, 251, 0.1)'
+              }}>
+                <h3 style={{
+                  fontSize: '1.8rem',
+                  fontWeight: '600',
+                  color: 'var(--primary-dark)',
+                  marginBottom: '2rem',
+                  textAlign: 'center'
+                }}>
+                  Primary Problems to Solve
+                </h3>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                  gap: '2rem'
+                }}>
+                  {[
+                    {
+                      number: '01',
+                      title: 'Operational Inefficiency',
+                      description: 'Manual processes creating bottlenecks and high costs'
+                    },
+                    {
+                      number: '02',
+                      title: 'Communication Breakdown',
+                      description: 'Members missing important updates and schedule changes'
+                    },
+                    {
+                      number: '03',
+                      title: 'Poor Member Experience',
+                      description: 'Confusing onboarding and lack of self-service options'
+                    }
+                  ].map((problem, index) => (
+                    <div key={index} style={{
+                      background: 'white',
+                      padding: '2rem',
+                      borderRadius: '16px',
+                      border: '1px solid rgba(240, 147, 251, 0.1)'
                     }}>
-                      {insight}
-                    </p>
-                  </div>
-                ))}
+                      <div style={{
+                        fontSize: '2rem',
+                        fontWeight: '700',
+                        color: '#f093fb',
+                        marginBottom: '1rem'
+                      }}>
+                        {problem.number}
+                      </div>
+                      <h4 style={{
+                        fontSize: '1.2rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '0.5rem'
+                      }}>
+                        {problem.title}
+                      </h4>
+                      <p style={{
+                        fontSize: '1rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.5'
+                      }}>
+                        {problem.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
 
-            {/* Wireframes */}
+            {/* Core Features */}
             <section style={{ marginBottom: '6rem' }}>
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <p style={{
@@ -361,7 +466,7 @@ export default function ATTProject() {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  WIREFRAMES
+                  Solution Design
                 </p>
                 <h2 style={{
                   fontSize: '2.5rem',
@@ -369,727 +474,566 @@ export default function ATTProject() {
                   marginBottom: '1rem',
                   color: 'var(--primary-dark)'
                 }}>
-                  Key Screen Designs
+                  Core Features
                 </h2>
               </div>
 
-              {/* Home & Comment Screens */}
               <div style={{ marginBottom: '4rem' }}>
+                {/* Quick Check-In System */}
                 <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '2rem',
-                  marginBottom: '2rem'
+                  background: '#f8f9fa',
+                  padding: '3rem',
+                  borderRadius: '20px',
+                  marginBottom: '3rem',
+                  border: '1px solid #e9ecef'
                 }}>
                   <div style={{
-                    height: '400px',
-                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative'
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '4rem',
+                    alignItems: 'start'
                   }}>
-                    <Image
-                      src="/images/Home.png"
-                      alt="Home Screen Wireframe"
-                      fill
-                      style={{
-                        objectFit: 'contain',
-                        padding: '2rem'
-                      }}
-                    />
-                  </div>
-                  <div style={{
-                    height: '400px',
-                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative'
-                  }}>
-                    <Image
-                      src="/images/Comment.png"
-                      alt="Comment Screen Wireframe"
-                      fill
-                      style={{
-                        objectFit: 'contain',
-                        padding: '2rem'
-                      }}
-                    />
-                  </div>
-                </div>
-                <p style={{
-                  fontSize: '1.2rem',
-                  fontWeight: '400',
-                  lineHeight: '1.7',
-                  color: 'var(--text-secondary)',
-                  textAlign: 'center',
-                  margin: 0
-                }}>
-                  These screens are part of a feature that allows users to share and engage with workout posts. The Home screen displays a feed of posts made by members along with attended class posts, which includes logs of the classes that have occurred. The Comment screen expands the post, enabling users to view details and add their thoughts, fostering community interaction and motivation among members.
-                </p>
-              </div>
-
-              {/* Post Screen */}
-              <div style={{ marginBottom: '4rem' }}>
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  marginBottom: '2rem'
-                }}>
-                  <div style={{
-                    width: '300px',
-                    height: '400px',
-                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative'
-                  }}>
-                    <Image
-                      src="/images/Post.png"
-                      alt="Post Creation Screen Wireframe"
-                      fill
-                      style={{
-                        objectFit: 'contain',
-                        padding: '2rem'
-                      }}
-                    />
-                  </div>
-                </div>
-                <p style={{
-                  fontSize: '1.2rem',
-                  fontWeight: '400',
-                  lineHeight: '1.7',
-                  color: 'var(--text-secondary)',
-                  textAlign: 'center',
-                  margin: 0
-                }}>
-                  The Post screen allows members to log and share their training experiences by selecting the workout type, data format (e.g., stats, reflections), and adding a title, description, and optional media.
-                </p>
-              </div>
-
-              {/* Progress Screens */}
-              <div style={{ marginBottom: '4rem' }}>
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                  gap: '1.5rem',
-                  marginBottom: '2rem'
-                }}>
-                  {[
-                    { src: '/images/Progress.png', alt: 'Progress Overview' },
-                    { src: '/images/Belt Progress Opened.png', alt: 'Belt Progress Opened' },
-                    { src: '/images/Belt Progress Closed.png', alt: 'Belt Progress Closed' },
-                    { src: '/images/Badges Earned.png', alt: 'Badges Earned' }
-                  ].map((screen, index) => (
-                    <div key={index} style={{
-                      height: '350px',
-                      background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.05))',
+                    <div>
+                      <h3 style={{
+                        fontSize: '1.8rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '1.5rem'
+                      }}>
+                        Quick Check-In System
+                      </h3>
+                      <div style={{
+                        background: 'rgba(245, 87, 108, 0.1)',
+                        padding: '1.5rem',
+                        borderRadius: '12px',
+                        borderLeft: '4px solid #f5576c',
+                        marginBottom: '2rem'
+                      }}>
+                        <p style={{
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#f5576c',
+                          marginBottom: '0.5rem'
+                        }}>
+                          PROBLEM SOLVED
+                        </p>
+                        <p style={{
+                          fontSize: '1rem',
+                          color: 'var(--text-secondary)',
+                          lineHeight: '1.5'
+                        }}>
+                          2-3 minute check-in times creating bottlenecks during peak hours
+                        </p>
+                      </div>
+                      <p style={{
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        color: '#f093fb',
+                        marginBottom: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        SOLUTION
+                      </p>
+                      <ul style={{
+                        fontSize: '1rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.7',
+                        paddingLeft: '1.5rem',
+                        listStyleType: 'disc'
+                      }}>
+                        <li style={{ marginBottom: '0.5rem' }}>QR code-based instant check-in (goal: under 30 seconds)</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Offline-capable system for reliable gym environments</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Visual membership status display for staff verification</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Automatic attendance tracking and notifications</li>
+                      </ul>
+                    </div>
+                    <div style={{
+                      height: '400px',
+                      background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
                       borderRadius: '16px',
+                      border: '2px dashed rgba(240, 147, 251, 0.3)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       position: 'relative'
                     }}>
-                      <Image
-                        src={screen.src}
-                        alt={screen.alt}
+                      <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📱</div>
+                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>Check-In Wireframes</p>
+                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
+                      </div>
+                      {/* Uncomment and replace with your actual image */}
+                      {/* <Image
+                        src="/images/checkin-wireframes.png"
+                        alt="Check-in System Wireframes"
                         fill
-                        style={{
-                          objectFit: 'contain',
-                          padding: '1rem'
-                        }}
-                      />
+                        style={{ objectFit: 'contain', borderRadius: '16px' }}
+                      /> */}
                     </div>
-                  ))}
+                  </div>
                 </div>
-                
-                <div style={{
-                  background: 'rgba(240, 147, 251, 0.05)',
-                  padding: '2rem',
-                  borderRadius: '16px'
-                }}>
-                  <ul style={{
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0,
-                    fontSize: '1.5rem',
-                    lineHeight: '1.7',
-                    color: 'var(--text-secondary)'
-                  }}>
-                    {[
-                      'Badges Earned: Displays achievements like class attendance and check-ins, with progress trackers for ongoing goals.',
-                      'Belt Progress (Closed/Opened): Features an interactive calendar highlighting upcoming promotion tests, with detailed event information when expanded.',
-                      'Progress Overview: Provides a snapshot of the user\'s current belt ranks alongside key badges.'
-                    ].map((item, index) => (
-                      <li key={index} style={{
-                        display: 'flex',
-                        alignItems: 'flex-start',
-                        gap: '1rem',
-                        marginBottom: '1rem'
-                      }}>
-                        <span style={{
-                          color: '#f093fb',
-                          fontSize: '1.3rem',
-                          fontWeight: '700',
-                          minWidth: '20px'
-                        }}>
-                          •
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
 
-            {/* Testing Rounds */}
-            <section style={{ marginBottom: '6rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#f093fb',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  USER TESTING
-                </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  Two Rounds of Testing & Iteration
-                </h2>
-              </div>
-
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '3rem'
-              }}>
-                {/* Round 1 */}
+                {/* Self-Service Member Portal */}
                 <div style={{
                   background: 'white',
+                  padding: '3rem',
                   borderRadius: '20px',
-                  padding: '2.5rem',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(240, 147, 251, 0.1)'
+                  marginBottom: '3rem',
+                  border: '1px solid #e9ecef'
                 }}>
-                  <h3 style={{
-                    fontSize: '1.5rem',
-                    fontWeight: '700',
-                    marginBottom: '1.5rem',
-                    color: 'var(--primary-dark)'
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '4rem',
+                    alignItems: 'start'
                   }}>
-                    Round 1 of Testing
-                  </h3>
-                  
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Objective
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      Validate feature desirability and identify usability issues before moving into high-fidelity screens.
-                    </p>
-                  </div>
-
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Participants
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      6 gym members, 2 gym coaches
-                    </p>
-                  </div>
-
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Method
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      Remote
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '1rem',
-                      color: '#f093fb'
-                    }}>
-                      Tasks
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                      {[
-                        'Describe the information you see on the home screen, and (assuming they can see it\'s a post) click the button to comment on the post',
-                        'Click the button you would use to create a post',
-                        'Navigate to the progress tab, and walk me through the information you\'re seeing on the screen'
-                      ].map((task, index) => (
-                        <li key={index} style={{
-                          display: 'flex',
-                          alignItems: 'flex-start',
-                          gap: '0.75rem',
-                          marginBottom: '0.75rem',
-                          fontSize: '0.95rem',
-                          lineHeight: '1.5',
-                          color: 'var(--text-secondary)'
-                        }}>
-                          <span style={{
-                            color: '#f093fb',
-                            fontSize: '1rem',
-                            fontWeight: '700',
-                            minWidth: '16px'
-                          }}>
-                            •
-                          </span>
-                          {task}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Round 2 */}
-                <div style={{
-                  background: 'white',
-                  borderRadius: '20px',
-                  padding: '2.5rem',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(240, 147, 251, 0.1)'
-                }}>
-                  <h3 style={{
-                    fontSize: '1.5rem',
-                    fontWeight: '700',
-                    marginBottom: '1.5rem',
-                    color: 'var(--primary-dark)'
-                  }}>
-                    Round 2 of Testing
-                  </h3>
-                  
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Objective
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      Validate UI compatibility and identify any other issues
-                    </p>
-                  </div>
-
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Participants
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      6 gym members, 2 gym coaches
-                    </p>
-                  </div>
-
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '0.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Method
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
-                    }}>
-                      Remote
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '1rem',
-                      color: '#f093fb'
-                    }}>
-                      Tasks
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                      <li style={{
-                        display: 'flex',
-                        alignItems: 'flex-start',
-                        gap: '0.75rem',
-                        marginBottom: '1rem',
-                        fontSize: '0.95rem',
-                        lineHeight: '1.5',
-                        color: 'var(--text-secondary)'
-                      }}>
-                        <span style={{
-                          color: '#f093fb',
-                          fontSize: '1rem',
-                          fontWeight: '700',
-                          minWidth: '16px'
-                        }}>
-                          •
-                        </span>
-                        Navigate to the home screen, create a post, and view all the elements in the progress bar
-                      </li>
-                    </ul>
-
-                    <h4 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      marginBottom: '1rem',
-                      marginTop: '1.5rem',
-                      color: '#f093fb'
-                    }}>
-                      Client Requests
-                    </h4>
-                    <p style={{
-                      fontSize: '0.95rem',
-                      lineHeight: '1.5',
-                      color: 'var(--text-secondary)',
-                      fontStyle: 'italic',
-                      margin: 0
-                    }}>
-                      Based on testing results, the client requested additional refinements to the progress tracking system and social features integration.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Final Prototype */}
-            <section style={{ marginBottom: '6rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#f093fb',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  FINAL PROTOTYPE
-                </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  High-Fidelity Mobile App Design
-                </h2>
-              </div>
-
-              <div style={{
-                height: '500px',
-                background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
-                borderRadius: '24px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                position: 'relative',
-                marginBottom: '3rem'
-              }}>
-                <Image
-                  src="/images/ATTCoverMockup.png"
-                  alt="ATT Final Prototype"
-                  fill
-                  style={{
-                    objectFit: 'contain'
-                  }}
-                />
-              </div>
-            </section>
-
-            {/* Key Features & Outcomes */}
-            <section style={{ marginBottom: '5rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#f093fb',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  KEY FEATURES
-                </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  What We Delivered
-                </h2>
-              </div>
-
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '2rem'
-              }}>
-                {[
-                  {
-                    icon: '📈',
-                    title: 'Progress Tracking System',
-                    description: 'Comprehensive belt progression tracking with interactive calendar for promotion tests and achievement badges for attendance and check-ins.'
-                  },
-                  {
-                    icon: '👥',
-                    title: 'Social Workout Sharing',
-                    description: 'Members can post workouts, training logs, and class notes to share with coaches and friends, fostering community interaction.'
-                  },
-                  {
-                    icon: '🎯',
-                    title: 'Engagement Features',
-                    description: 'Gamified elements including badges, streaks, and class attendance tracking to encourage regular participation and membership retention.'
-                  },
-                  {
-                    icon: '💬',
-                    title: 'Coach-Member Feedback',
-                    description: 'Enhanced communication channels allowing coaches to provide feedback on member posts and track individual progress over time.'
-                  }
-                ].map((feature, index) => (
-                  <div key={index} style={{
-                    background: 'white',
-                    borderRadius: '20px',
-                    padding: '2rem',
-                    textAlign: 'center',
-                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                    border: '1px solid rgba(240, 147, 251, 0.1)',
-                    transition: 'transform 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-8px)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                  }}
-                  >
                     <div style={{
-                      fontSize: '3rem',
+                      height: '400px',
+                      background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                      borderRadius: '16px',
+                      border: '2px dashed rgba(240, 147, 251, 0.3)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      position: 'relative'
+                    }}>
+                      <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👤</div>
+                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>Member Portal Wireframes</p>
+                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
+                      </div>
+                      {/* Uncomment and replace with your actual image */}
+                      {/* <Image
+                        src="/images/member-portal-wireframes.png"
+                        alt="Member Portal Wireframes"
+                        fill
+                        style={{ objectFit: 'contain', borderRadius: '16px' }}
+                      /> */}
+                    </div>
+                    <div>
+                      <h3 style={{
+                        fontSize: '1.8rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '1.5rem'
+                      }}>
+                        Self-Service Member Portal
+                      </h3>
+                      <div style={{
+                        background: 'rgba(245, 87, 108, 0.1)',
+                        padding: '1.5rem',
+                        borderRadius: '12px',
+                        borderLeft: '4px solid #f5576c',
+                        marginBottom: '2rem'
+                      }}>
+                        <p style={{
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#f5576c',
+                          marginBottom: '0.5rem'
+                        }}>
+                          PROBLEM SOLVED
+                        </p>
+                        <p style={{
+                          fontSize: '1rem',
+                          color: 'var(--text-secondary)',
+                          lineHeight: '1.5'
+                        }}>
+                          Staff overwhelmed with repetitive questions about accounts and schedules
+                        </p>
+                      </div>
+                      <p style={{
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        color: '#f093fb',
+                        marginBottom: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        SOLUTION
+                      </p>
+                      <ul style={{
+                        fontSize: '1rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.7',
+                        paddingLeft: '1.5rem',
+                        listStyleType: 'disc'
+                      }}>
+                        <li style={{ marginBottom: '0.5rem' }}>Complete membership management (view status, renew, update payments)</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Personal class schedule with real-time updates</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Digital membership card and guest pass management</li>
+                        <li style={{ marginBottom: '0.5rem' }}>FAQ and gym policy access without staff assistance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Centralized News Hub */}
+                <div style={{
+                  background: '#f8f9fa',
+                  padding: '3rem',
+                  borderRadius: '20px',
+                  marginBottom: '3rem',
+                  border: '1px solid #e9ecef'
+                }}>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '4rem',
+                    alignItems: 'start'
+                  }}>
+                    <div>
+                      <h3 style={{
+                        fontSize: '1.8rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '1.5rem'
+                      }}>
+                        Centralized News Hub
+                      </h3>
+                      <div style={{
+                        background: 'rgba(245, 87, 108, 0.1)',
+                        padding: '1.5rem',
+                        borderRadius: '12px',
+                        borderLeft: '4px solid #f5576c',
+                        marginBottom: '2rem'
+                      }}>
+                        <p style={{
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          color: '#f5576c',
+                          marginBottom: '0.5rem'
+                        }}>
+                          PROBLEM SOLVED
+                        </p>
+                        <p style={{
+                          fontSize: '1rem',
+                          color: 'var(--text-secondary)',
+                          lineHeight: '1.5'
+                        }}>
+                          Members missing important announcements posted on bulletin boards
+                        </p>
+                      </div>
+                      <p style={{
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        color: '#f093fb',
+                        marginBottom: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        SOLUTION
+                      </p>
+                      <ul style={{
+                        fontSize: '1rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.7',
+                        paddingLeft: '1.5rem',
+                        listStyleType: 'disc'
+                      }}>
+                        <li style={{ marginBottom: '0.5rem' }}>Prominent news feed on home screen with priority messaging</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Push notifications for urgent updates (schedule changes, events)</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Event calendar with RSVP functionality</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Location-specific announcements for multi-gym network</li>
+                      </ul>
+                    </div>
+                    <div style={{
+                      height: '400px',
+                      background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                      borderRadius: '16px',
+                      border: '2px dashed rgba(240, 147, 251, 0.3)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      position: 'relative'
+                    }}>
+                      <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📰</div>
+                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>News Hub Wireframes</p>
+                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
+                      </div>
+                      {/* Uncomment and replace with your actual image */}
+                      {/* <Image
+                        src="/images/news-hub-wireframes.png"
+                        alt="News Hub Wireframes"
+                        fill
+                        style={{ objectFit: 'contain', borderRadius: '16px' }}
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Usability Testing */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <p style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  color: '#f093fb',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  Validation & Testing
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '600',
+                  marginBottom: '1rem',
+                  color: 'var(--primary-dark)'
+                }}>
+                  Two Rounds of Usability Testing
+                </h2>
+              </div>
+
+              {/* First Round */}
+              <div style={{
+                background: '#f8f9fa',
+                padding: '3rem',
+                borderRadius: '20px',
+                marginBottom: '3rem',
+                border: '1px solid #e9ecef'
+              }}>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 2fr',
+                  gap: '3rem',
+                  marginBottom: '2rem'
+                }}>
+                  <div>
+                    <h3 style={{
+                      fontSize: '1.8rem',
+                      fontWeight: '600',
+                      color: 'var(--primary-dark)',
                       marginBottom: '1rem'
                     }}>
-                      {feature.icon}
-                    </div>
-                    <h3 style={{
-                      fontSize: '1.3rem',
-                      fontWeight: '700',
-                      marginBottom: '1rem',
-                      color: 'var(--primary-dark)'
-                    }}>
-                      {feature.title}
+                      First Round Testing
                     </h3>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)',
-                      margin: 0
+                    <div style={{
+                      background: 'white',
+                      padding: '1.5rem',
+                      borderRadius: '12px',
+                      border: '1px solid #e9ecef'
                     }}>
-                      {feature.description}
-                    </p>
+                      <p style={{ fontSize: '0.9rem', fontWeight: '600', color: '#f093fb', marginBottom: '0.5rem' }}>
+                        METHOD
+                      </p>
+                      <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                        <strong>6 participants:</strong> 2 current ATT members, 2 front desk staff, 2 potential new members<br/>
+                        <strong>Format:</strong> In-person moderated sessions (45 minutes each)<br/>
+                        <strong>Prototype:</strong> Low-fidelity mobile app
+                      </p>
+                    </div>
                   </div>
-                ))}
+                  <div>
+                    <h4 style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '600',
+                      color: 'var(--primary-dark)',
+                      marginBottom: '1rem'
+                    }}>
+                      Critical Issues Identified
+                    </h4>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                      {[
+                        {
+                          title: 'Missing Feedback States',
+                          description: 'Users unsure if check-in was successful - 50% tried to check in multiple times'
+                        },
+                        {
+                          title: 'Payment Management Hidden',
+                          description: '4/6 participants couldn\'t locate payment update feature'
+                        },
+                        {
+                          title: 'Staff Navigation Inconsistency',
+                          description: 'Different navigation patterns confused staff users'
+                        }
+                      ].map((issue, idx) => (
+                        <div key={idx} style={{
+                          background: 'rgba(245, 87, 108, 0.1)',
+                          padding: '1rem',
+                          borderRadius: '8px',
+                          borderLeft: '3px solid #f5576c'
+                        }}>
+                          <p style={{ fontWeight: '600', color: '#f5576c', fontSize: '0.95rem', marginBottom: '0.25rem' }}>
+                            {issue.title}
+                          </p>
+                          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                            {issue.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
 
-            {/* Key Takeaways */}
-            <section style={{ marginBottom: '5rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <p style={{
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  color: '#f093fb',
-                  marginBottom: '1rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  PROJECT LEARNINGS
-                </p>
-                <h2 style={{
-                  fontSize: '2.5rem',
-                  fontWeight: '600',
-                  marginBottom: '1rem',
-                  color: 'var(--primary-dark)'
-                }}>
-                  Key Takeaways
-                </h2>
-              </div>
-
+              {/* Second Round */}
               <div style={{
                 background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
-                padding: '2rem',
-                borderRadius: '20px'
+                padding: '3rem',
+                borderRadius: '20px',
+                border: '1px solid rgba(240, 147, 251, 0.1)'
               }}>
-                <ul style={{
-                  listStyle: 'none',
-                  padding: 0,
-                  margin: 0
+                <h3 style={{
+                  fontSize: '1.8rem',
+                  fontWeight: '600',
+                  color: 'var(--primary-dark)',
+                  marginBottom: '2rem'
+                }}>
+                  Second Round Testing - Issues Resolved
+                </h3>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                  gap: '2rem',
+                  marginBottom: '2rem'
                 }}>
                   {[
-                    'Different user types (fighters, enthusiasts, coaches) have distinct needs that must be balanced in the design',
-                    'Progress tracking is essential for member motivation, but must be simple and visual to encourage regular use',
-                    'Social features significantly impact member engagement when designed with community building in mind',
-                    'Multiple rounds of testing with real gym members provided invaluable insights for feature refinement',
-                    'Gamification elements like badges and streaks can effectively encourage consistent gym attendance'
-                  ].map((takeaway, index) => (
-                    <li key={index} style={{
-                      display: 'flex',
-                      alignItems: 'flex-start',
-                      gap: '1rem',
-                      marginBottom: '1rem',
-                      fontSize: '1.4rem',
-                      lineHeight: '1.6',
-                      color: 'var(--text-secondary)'
+                    {
+                      title: '✅ Missing Feedback States',
+                      solution: 'Added animated confirmation with checkmark and "You\'re checked in!" message',
+                      result: '5/5 participants successfully checked in on first attempt'
+                    },
+                    {
+                      title: '✅ Hidden Payment Management',
+                      solution: 'Moved payment settings to main profile with visual card icons',
+                      result: 'All participants found payment options within 15 seconds'
+                    },
+                    {
+                      title: '✅ Navigation Inconsistency',
+                      solution: 'Unified navigation structure with consistent back button behavior',
+                      result: 'Staff task completion time reduced by 60%'
+                    }
+                  ].map((fix, idx) => (
+                    <div key={idx} style={{
+                      background: 'white',
+                      padding: '2rem',
+                      borderRadius: '16px',
+                      border: '1px solid rgba(240, 147, 251, 0.1)'
                     }}>
-                      <span style={{
-                        color: '#f093fb',
-                        fontSize: '1.2rem',
-                        fontWeight: '700',
-                        minWidth: '20px'
+                      <h4 style={{
+                        fontSize: '1.1rem',
+                        fontWeight: '600',
+                        color: 'var(--primary-dark)',
+                        marginBottom: '1rem'
                       }}>
-                        ✓
-                      </span>
-                      {takeaway}
-                    </li>
+                        {fix.title}
+                      </h4>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        color: 'var(--text-secondary)',
+                        marginBottom: '1rem',
+                        lineHeight: '1.5'
+                      }}>
+                        <strong>Solution:</strong> {fix.solution}
+                      </p>
+                      <p style={{
+                        fontSize: '0.95rem',
+                        color: '#28a745',
+                        fontWeight: '600'
+                      }}>
+                        <strong>Result:</strong> {fix.result}
+                      </p>
+                    </div>
                   ))}
-                </ul>
+                </div>
+
+                {/* Success Metrics */}
+                <div style={{
+                  background: 'white',
+                  padding: '2rem',
+                  borderRadius: '16px',
+                  border: '1px solid rgba(240, 147, 251, 0.1)',
+                  textAlign: 'center'
+                }}>
+                  <h4 style={{
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: 'var(--primary-dark)',
+                    marginBottom: '1.5rem'
+                  }}>
+                    Final Success Metrics
+                  </h4>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gap: '2rem'
+                  }}>
+                    {[
+                      { metric: '95%', description: 'Task completion rate', improvement: 'up from 70%' },
+                      { metric: '40%', description: 'Reduction in task time', improvement: 'average across all tasks' },
+                      { metric: '4.6/5', description: 'User satisfaction score', improvement: 'up from 3.2/5' }
+                    ].map((stat, idx) => (
+                      <div key={idx}>
+                        <div style={{
+                          fontSize: '2rem',
+                          fontWeight: '700',
+                          color: '#f093fb',
+                          marginBottom: '0.5rem'
+                        }}>
+                          {stat.metric}
+                        </div>
+                        <p style={{
+                          fontSize: '1rem',
+                          color: 'var(--text-secondary)',
+                          marginBottom: '0.25rem'
+                        }}>
+                          {stat.description}
+                        </p>
+                        <p style={{
+                          fontSize: '0.85rem',
+                          color: '#28a745',
+                          fontWeight: '600'
+                        }}>
+                          ({stat.improvement})
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
+            </section>
+            
+            {/* Next Project Navigation */}
+            <section style={{
+              padding: '3rem 0',
+              borderTop: '1px solid #e9ecef',
+              textAlign: 'center'
+            }}>
+              <Link 
+                href="/projects"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '1rem 2rem',
+                  background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '50px',
+                  fontSize: '1.1rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 15px rgba(240, 147, 251, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(240, 147, 251, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 15px rgba(240, 147, 251, 0.3)';
+                }}
+              >
+                ← View All Projects
+              </Link>
             </section>
           </div>
         </div>
-
-        {/* Navigation to Other Projects */}
-        <section style={{
-          backgroundColor: '#f9f9f9',
-          padding: '4rem 3rem'
-        }}>
-          <div style={{
-            maxWidth: '1200px',
-            margin: '0 auto',
-            textAlign: 'center'
-          }}>
-            <h2 style={{
-              fontSize: '2rem',
-              fontWeight: '700',
-              marginBottom: '1rem',
-              color: 'var(--primary-dark)'
-            }}>
-              Explore More Projects
-            </h2>
-            <p style={{
-              fontSize: '1.1rem',
-              marginBottom: '3rem',
-              color: 'var(--text-secondary)'
-            }}>
-              Check out my other design work and case studies
-            </p>
-            
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: '2rem'
-            }}>
-              {[
-  { name: 'Prommuni', href: '/projects/prommuni', description: 'SaaS Platform' },
-  { name: 'Macro Meal Generator', href: '/projects/macro-meal', description: 'AI-Powered Nutrition' },
-  { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
-].map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.href}
-                  style={{
-                    display: 'block',
-                    padding: '2rem',
-                    background: 'white',
-                    borderRadius: '16px',
-                    textDecoration: 'none',
-                    color: 'var(--primary-dark)',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-4px)';
-                    e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.15)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.08)';
-                  }}
-                >
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem' }}>
-                    {project.name}
-                  </h3>
-                  <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', margin: 0 }}>
-                    {project.description}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
