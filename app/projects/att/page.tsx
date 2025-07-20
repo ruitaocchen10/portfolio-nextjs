@@ -99,7 +99,7 @@ export default function ATTProject() {
               </div>
               <div>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', marginBottom: '0.5rem' }}>TEAM</p>
-                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-primary)' }}>Solo Project</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-primary)' }}>Solo Freelance Project</p>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function ATTProject() {
             overflow: 'hidden'
           }}>
             <Image
-              src="/images/ATTCoverMockup.png"
+              src="/images/3ScreenMockups.png"
               alt="ATT Mobile App Design"
               fill
               style={{
@@ -560,16 +560,13 @@ export default function ATTProject() {
                     }}>
                       <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
                         <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📱</div>
-                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>Check-In Wireframes</p>
-                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
                       </div>
-                      {/* Uncomment and replace with your actual image */}
-                      {/* <Image
-                        src="/images/checkin-wireframes.png"
+                     <Image
+                        src="/images/QRCodeWireframeMockup.png"
                         alt="Check-in System Wireframes"
                         fill
-                        style={{ objectFit: 'contain', borderRadius: '16px' }}
-                      /> */}
+                        style={{ objectFit: 'cover', borderRadius: '16px' }}
+                      /> 
                     </div>
                   </div>
                 </div>
@@ -600,16 +597,14 @@ export default function ATTProject() {
                     }}>
                       <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
                         <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👤</div>
-                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>Member Portal Wireframes</p>
-                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
                       </div>
                       {/* Uncomment and replace with your actual image */}
-                      {/* <Image
-                        src="/images/member-portal-wireframes.png"
+                      <Image
+                        src="/images/MemberPortalMockup.png"
                         alt="Member Portal Wireframes"
                         fill
                         style={{ objectFit: 'contain', borderRadius: '16px' }}
-                      /> */}
+                      />
                     </div>
                     <div>
                       <h3 style={{
@@ -750,16 +745,14 @@ export default function ATTProject() {
                     }}>
                       <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
                         <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📰</div>
-                        <p style={{ fontSize: '1rem', fontWeight: '500' }}>News Hub Wireframes</p>
-                        <p style={{ fontSize: '0.9rem' }}>Replace with your wireframe images</p>
                       </div>
                       {/* Uncomment and replace with your actual image */}
-                      {/* <Image
-                        src="/images/news-hub-wireframes.png"
+                      <Image
+                        src="/images/HomeWireframeMockup.png"
                         alt="News Hub Wireframes"
                         fill
-                        style={{ objectFit: 'contain', borderRadius: '16px' }}
-                      /> */}
+                        style={{ objectFit: 'cover', borderRadius: '16px' }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -997,41 +990,280 @@ export default function ATTProject() {
                 </div>
               </div>
             </section>
-            
-            {/* Next Project Navigation */}
-            <section style={{
-              padding: '3rem 0',
-              borderTop: '1px solid #e9ecef',
-              textAlign: 'center'
-            }}>
-              <Link 
-                href="/projects"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '1rem 2rem',
-                  background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                  color: 'white',
-                  textDecoration: 'none',
-                  borderRadius: '50px',
-                  fontSize: '1.1rem',
+
+            {/* Final Designs */}
+            <section style={{ marginBottom: '6rem' }}>
+              <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <p style={{
+                  fontSize: '1rem',
                   fontWeight: '600',
-                  transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 15px rgba(240, 147, 251, 0.3)'
+                  color: '#f093fb',
+                  marginBottom: '1rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  Final Designs
+                </p>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '600',
+                  marginBottom: '1rem',
+                  color: 'var(--primary-dark)'
+                }}>
+                  High-Fidelity Mockups
+                </h2>
+                <p style={{
+                  fontSize: '1.1rem',
+                  color: 'var(--text-secondary)',
+                  maxWidth: '700px',
+                  margin: '0 auto'
+                }}>
+                  The final designs incorporated all user feedback and testing insights, delivering solutions that directly addressed each identified problem.
+                </p>
+              </div>
+
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                gap: '3rem'
+              }}>
+                {/* Design 1 */}
+                <div style={{
+                  background: 'white',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  border: '1px solid #e9ecef',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(240, 147, 251, 0.4)';
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 15px rgba(240, 147, 251, 0.3)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '500px',
+                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                    border: '2px dashed rgba(240, 147, 251, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                      <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📱</div>
+                    </div>
+                    {/* Uncomment and replace with your actual image */}
+                    <Image
+                      src="/images/QRCodeMockup.png"
+                      alt="Final Design 1"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
+                  <div style={{ padding: '2rem' }}>
+                    <h3 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '600',
+                      color: 'var(--primary-dark)',
+                      marginBottom: '1rem'
+                    }}>
+                      Quick Check-In Flow
+                    </h3>
+                    <p style={{
+                      fontSize: '1rem',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.6'
+                    }}>
+                      QR code scanning with instant feedback reduces check-in time from 2-3 minutes to under 30 seconds, eliminating peak hour bottlenecks.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Design 2 */}
+                <div style={{
+                  background: 'white',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  border: '1px solid #e9ecef',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease'
                 }}
-              >
-                ← View All Projects
-              </Link>
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '500px',
+                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                    border: '2px dashed rgba(240, 147, 251, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                      <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👤</div>
+                    </div>
+                    {/* Uncomment and replace with your actual image */}
+                    <Image
+                      src="/images/MembershipMockup.png"
+                      alt="Final Design 2"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
+                  <div style={{ padding: '2rem' }}>
+                    <h3 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '600',
+                      color: 'var(--primary-dark)',
+                      marginBottom: '1rem'
+                    }}>
+                      Member Profile Dashboard
+                    </h3>
+                    <p style={{
+                      fontSize: '1rem',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.6'
+                    }}>
+                      Self-service portal allows members to manage accounts independently, reducing staff interruptions by 70% and improving member satisfaction.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Design 3 */}
+                <div style={{
+                  background: 'white',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  border: '1px solid #e9ecef',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '500px',
+                    background: 'linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.02))',
+                    border: '2px dashed rgba(240, 147, 251, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
+                      <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📰</div>
+                    </div>
+                    {/* Uncomment and replace with your actual image */}
+                    <Image
+                      src="/images/HomeMockup.png"
+                      alt="Final Design 3"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
+                  <div style={{ padding: '2rem' }}>
+                    <h3 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '600',
+                      color: 'var(--primary-dark)',
+                      marginBottom: '1rem'
+                    }}>
+                      News & Announcements Hub
+                    </h3>
+                    <p style={{
+                      fontSize: '1rem',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.6'
+                    }}>
+                      Prominent news feed with push notifications ensured 100% of members received important updates, eliminating missed announcements.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
+            
+             {/* Navigation to Other Projects */}
+        <section style={{
+          backgroundColor: '#f9f9f9',
+          padding: '4rem 3rem'
+        }}>
+          <div style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            textAlign: 'center'
+          }}>
+            <h2 style={{
+              fontSize: '2rem',
+              fontWeight: '700',
+              marginBottom: '1rem',
+              color: 'var(--primary-dark)'
+            }}>
+              Explore More Projects
+            </h2>
+            <p style={{
+              fontSize: '1.1rem',
+              marginBottom: '3rem',
+              color: 'var(--text-secondary)'
+            }}>
+              Check out my other design work and case studies
+            </p>
+            
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '2rem'
+            }}>
+              {[
+  { name: 'Prommuni', href: '/projects/prommuni', description: 'SaaS Platform' },
+  { name: 'Macro Meal Generator', href: '/projects/macro-meal', description: 'AI-Powered Nutrition' },
+  { name: 'SellMax', href: '/projects/sellmax', description: 'Web App Updates' }
+].map((project, index) => (
+                <Link
+                  key={index}
+                  href={project.href}
+                  style={{
+                    display: 'block',
+                    padding: '2rem',
+                    background: 'white',
+                    borderRadius: '16px',
+                    textDecoration: 'none',
+                    color: 'var(--primary-dark)',
+                    transition: 'all 0.3s ease',
+                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-4px)';
+                    e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.08)';
+                  }}
+                >
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem' }}>
+                    {project.name}
+                  </h3>
+                  <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', margin: 0 }}>
+                    {project.description}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
           </div>
         </div>
       </main>
