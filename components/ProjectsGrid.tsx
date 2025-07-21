@@ -14,7 +14,8 @@ const projects = [
     description: 'An AI-powered web application that eliminates the daily mental overhead of macro tracking by automatically generating personalized meal plans',
     image: '/images/MacroMealCoverMockup.png',
     tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
-    color: '#f97316'
+    color: '#f97316',
+    isPasswordProtected: true
   },
   {
     id: 'prommuni',
@@ -23,7 +24,8 @@ const projects = [
     description: 'A service for young professionals to find roommates and leases with similar minded people',
     image: '/images/PrommuniCoverMockup.png',
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
-    color: '#4facfe'
+    color: '#4facfe',
+    isPasswordProtected: true
   },
   {
     id: 'att',
@@ -32,7 +34,8 @@ const projects = [
     description: 'Redesigning the ATT mobile application to improve user experience and modernize the interface',
     image: '/images/ATTCoverMockup.png',
     tags: ['Mobile Design', 'UX Research', 'UI Design', 'Figma'],
-    color: '#f093fb'
+    color: '#f093fb',
+    isPasswordProtected: false
   },
   {
     id: 'sellmax',
@@ -41,7 +44,8 @@ const projects = [
     description: 'Redesigning a car quote questionnaire to reduce user abandonment and improve conversion rates',
     image: '/images/SellMaxCoverMockup.png',
     tags: ['Conversion Optimization', 'Web Design', 'UX Research', 'Figma'],
-    color: '#22c55e'
+    color: '#22c55e',
+    isPasswordProtected: false
   }
 ];
 
@@ -100,7 +104,6 @@ export default function ProjectsGrid() {
           }}>
             Recent Projects
           </h2>
-        
         </div>
 
         {/* Projects Grid */}
@@ -188,6 +191,50 @@ export default function ProjectsGrid() {
                       }}>
                         Image: {project.image}
                       </div>
+                    </div>
+                  )}
+
+                  {/* Password Protection Indicator */}
+                  {project.isPasswordProtected && (
+                    <div 
+                      style={{
+                        position: 'absolute',
+                        top: '1rem',
+                        right: '1rem',
+                        background: 'rgba(0, 0, 0, 0.8)',
+                        backdropFilter: 'blur(8px)',
+                        borderRadius: '8px',
+                        padding: '0.5rem 0.75rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        fontSize: '0.75rem',
+                        color: 'white',
+                        fontWeight: '500',
+                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                        transition: 'all 0.3s ease',
+                        cursor: 'help',
+                        zIndex: 10
+                      }}
+                      title="This project requires a password to access"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(0, 0, 0, 0.9)';
+                        e.currentTarget.style.transform = 'scale(1.05)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(0, 0, 0, 0.8)';
+                        e.currentTarget.style.transform = 'scale(1)';
+                      }}
+                    >
+                      <span style={{ fontSize: '0.9rem' }}>🔒</span>
+                      <span style={{ 
+                        whiteSpace: 'nowrap',
+                        fontSize: '0.75rem',
+                        opacity: 0.9
+                      }}>
+                        Protected
+                      </span>
                     </div>
                   )}
                   

@@ -16,7 +16,8 @@ const projects = [
     tags: ['AI Integration', 'Full Stack Development', 'User Research', 'React'],
     role: 'Product Designer & Developer',
     year: '2025',
-    color: '#f97316'
+    color: '#f97316',
+    isPasswordProtected: true
   },
   {
     id: 'prommuni',
@@ -27,7 +28,8 @@ const projects = [
     tags: ['SaaS', 'User Research', 'Social Features', 'Figma'],
     role: 'Product Designer',
     year: '2024 - Present',
-    color: '#4facfe'
+    color: '#4facfe',
+    isPasswordProtected: true
   },
   {
     id: 'att',
@@ -38,7 +40,8 @@ const projects = [
     tags: ['Mobile Design', 'Prototyping', 'User Interviews', 'User Flow'],
     role: 'UI/UX Designer',
     year: '2024',
-    color: '#f093fb'
+    color: '#f093fb',
+    isPasswordProtected: false
   },
   {
     id: 'sellmax',
@@ -49,7 +52,8 @@ const projects = [
     tags: ['Web Design', 'Conversion', 'Analytics', 'Figma'],
     role: 'UI/UX Designer',
     year: '2023',
-    color: '#22c55e'
+    color: '#22c55e',
+    isPasswordProtected: false
   }
 ];
 
@@ -203,6 +207,50 @@ export default function Projects() {
                   }}>
                     {project.year}
                   </div>
+
+                  {/* Password Protection Indicator */}
+                  {project.isPasswordProtected && (
+                    <div 
+                      style={{
+                        position: 'absolute',
+                        top: '1.5rem',
+                        right: '1.5rem',
+                        background: 'rgba(0, 0, 0, 0.8)',
+                        backdropFilter: 'blur(8px)',
+                        borderRadius: '8px',
+                        padding: '0.5rem 0.75rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        fontSize: '0.75rem',
+                        color: 'white',
+                        fontWeight: '500',
+                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                        transition: 'all 0.3s ease',
+                        cursor: 'help',
+                        zIndex: 10
+                      }}
+                      title="This project requires a password to access"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(0, 0, 0, 0.9)';
+                        e.currentTarget.style.transform = 'scale(1.05)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(0, 0, 0, 0.8)';
+                        e.currentTarget.style.transform = 'scale(1)';
+                      }}
+                    >
+                      <span style={{ fontSize: '0.9rem' }}>🔒</span>
+                      <span style={{ 
+                        whiteSpace: 'nowrap',
+                        fontSize: '0.75rem',
+                        opacity: 0.9
+                      }}>
+                        Protected
+                      </span>
+                    </div>
+                  )}
 
                   {/* View Case Study Overlay */}
                   <div style={{
